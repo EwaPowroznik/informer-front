@@ -1,0 +1,208 @@
+
+    @font-face{
+        font-family:'Capsuula';
+        src:url(../../fonts/Capsuula.ttf);
+
+        font-family:"Free Pixel Regular";
+        src:url(../../fonts/FreePixel.ttf);
+
+        font-family:"Russo One Regular";
+        src:url(../../fonts/RussoOne-Regular.ttf);
+     }
+
+.heading-primary{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:3.5vh;
+    text-transform: uppercase;
+    font-weight: 400;
+    display:inline-block;
+    background-clip:text;
+    -webkit-background-clip: text;
+    color:transparent;
+    letter-spacing:0.2vh;
+    position:relative;
+  
+    
+        &--main{
+            @include  text-background ( $color-text-blue-dark,$color-text-blue-light);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            padding-left:10vh;
+            text-shadow: 0rem 0rem .5rem rgba($color-text-blue-light, .5);
+
+            &::before{
+                content:"";
+                width:6vh;
+                height:.4vh;
+                border-radius:5px;
+                position:absolute;
+                background:$color-text-blue-dark;
+                box-shadow: 0rem 0rem 1rem rgba($color-text-blue-light, .7);
+                top:45%;
+                left:4%;    
+            } 
+            &::after{
+                content:"";
+                width:22vh;
+                height:.4vh;
+                border-radius:5px;
+                position:absolute;
+                background:$color-text-blue-dark;
+                box-shadow: 0rem 0rem 1rem rgba($color-text-blue-light, .7);
+                top:45%;
+                right:0; 
+                transform:translatex(110%);   
+            }       
+        }
+
+        &--raid{
+            @include text-background ($color-raid,$color-raid-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            &::before{
+                content:'nalot';
+                @include text-background-before;
+            }
+        }
+        &--provocation{
+            @include text-background ($color-provocation,$color-provocation-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'prowokacja';
+                @include text-background-before;
+            }
+        }
+        &--recon{
+            @include text-background ($color-recon,$color-recon-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'rekonesans';
+                @include text-background-before;
+            }
+        }
+        &--wiretapping{
+            @include text-background ($color-wiretapping,$color-wiretapping-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'podsłuch';
+                @include text-background-before;
+            }
+        }
+        &--training{
+            @include text-background ($color-training,$color-training-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'trening';
+                @include text-background-before;
+            }
+        }
+
+        &--rest{
+            @include text-background ($color-rest,$color-rest-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            display:inline-block;
+            &::before{
+                content:'Odpoczynek';
+                @include text-background-before;
+            }
+        }
+
+        &--observation{
+            @include text-background ($color-observation,$color-observation-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'Obserwacja';
+                @include text-background-before;
+            }
+        }
+        &--analysis{
+            @include text-background ($color-analysis,$color-analysis-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'Analiza';
+                @include text-background-before;
+            }
+            
+        }
+}
+        
+       
+.heading-secondary{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:2.2vh;
+    color:$color-text-white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing:0.1vh;
+    mix-blend-mode: lighten;  
+}
+.btn__text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display:inline-block;
+    text-align:center;
+    backface-visibility: hidden;
+    filter:contrast(120%);
+    font-size:1.6vh;
+    letter-spacing: .1vh;
+    opacity:1;
+    z-index:2;
+    transition: all .2s;
+
+    &:hover{
+        opacity:.7;
+        transform:translateY(.1vh)translate(-50%,-50%);
+    }
+    
+}
+.btn-popup-text{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:2vh;
+    // color:$color-text-white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing:0.2vh;
+    text-shadow:$text-shadow;
+}
+
+
+.timer__text{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:1.3vh;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:$color-blue-glow;
+}
+.timer__count{
+    font-family:"Free Pixel Regular", sans-serif;
+    font-weight: 300;
+    color:$color-blue-glow;
+    font-size:3vh;
+}
+
+

@@ -1,0 +1,37 @@
+.popup{
+    width:100vw;
+    height:100vh;
+    background:rgba($color-black,.3);
+    position:Absolute;
+    top:0;
+    left:0;
+    // opacity:0;
+    // visibility:hidden;
+    backdrop-filter: blur(1.5vh);
+    transition: all .3;
+
+    &:target{
+        opacity:1;
+        visibility: visible;
+    }
+
+    &__content{
+        width:64vw;
+        height:80vh;
+        position:Absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        background:url(../img/bg.png);
+        background-size: cover;
+        border-radius: 1.2vh;
+        box-shadow: 1vh 1.4vh 2vh.7vh rgba($color-black,.7);
+      
+    }
+
+    &__actions{
+        width:95%;
+        height:72%;
+        margin:0 auto;
+    }
+}

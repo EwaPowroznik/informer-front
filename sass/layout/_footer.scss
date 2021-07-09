@@ -1,0 +1,31 @@
+.footer{
+    width:97vw;
+    height:7vh;
+    position:Absolute;
+    left:0;
+    top:91%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+
+    &__logo-box{
+        width:25vh;
+        height:auto;
+        display:inline;
+        text-align:Center;
+
+        &>img{
+            width:100%;
+        }
+    }
+    &__logogame-box{
+        width:15vh;
+        height:auto;
+        display:inline;
+        text-align:right;
+
+        &>img{
+            width:50%;
+        }
+    }
+}

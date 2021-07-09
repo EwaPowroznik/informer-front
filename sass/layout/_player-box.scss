@@ -1,0 +1,97 @@
+.player-box{
+    border:2px solid $color-grey;
+    position:relative;
+
+    &--one{
+       @include img-position;
+       
+    }
+    &--two{
+        @include img-position;
+      
+    }
+    &--three{
+        @include img-position;
+    }
+    &--four{
+        @include img-position;
+
+    }
+    &--five{
+        @include img-position;
+        
+    }
+
+    &--six{
+        @include img-position;;
+    
+    }
+    &--seven{
+        @include img-position;
+    }
+    &--eight{
+        @include img-position;
+    }
+
+    &__name{
+        position:absolute;
+        top:16%;
+        left:52%;
+        width:55%;
+
+        transform:translate(-50%, -50%);
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+
+    }
+
+}
+.form__name{
+    .name-input{
+        border:none;
+        background:transparent;
+        text-align:center;
+        width:90%;
+        transition: all .4s;
+        overflow:hidden;
+        position:relative;
+        backface-visibility: hidden;
+        
+        &::placeholder{
+            color:$color-text-white;
+            transition: all .4s;
+        } 
+
+        &:hover{
+            filter:brightness(70%);
+           
+        } 
+        &:focus{
+            outline:none;
+            filter:brightness(90%);
+            text-shadow: 0rem 0rem .4rem $color-text-white;
+
+            // &::placeholder{
+                // opacity:0;
+            // }
+        }
+    
+    }
+    &-icon{
+        position:Absolute;
+        top:10%;
+        left:90%;
+        width:10%;
+        opacity:0;
+        transition: all .4s;
+    }
+
+    &:hover &-icon,
+    &:focus &-icon{
+        opacity:1;
+    }
+
+
+}

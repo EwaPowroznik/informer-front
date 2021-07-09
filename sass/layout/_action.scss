@@ -1,0 +1,52 @@
+.action{
+   border:1px solid blue;
+   margin: 2.5vh 0;
+
+   &--raid, 
+   &--provocation,
+   &--recon,
+   &--wiretapping,
+   &--training
+   {  position:relative;
+       &-header{
+           position:absolute;
+           left:50%;
+           transform: translate(-50%, -50%);
+       }
+   }
+   &__button-box{
+       position:absolute;
+       border:1px solid red;
+       width:90%;
+       display:flex;
+       align-items:center;
+       justify-content:space-between;
+       flex-wrap:wrap;
+
+         &--raid, 
+         &--provocation,
+         &--recon,
+         &--wiretapping{
+            left:50%;
+            top:110%;
+            transform: translate(-50%, -50%);
+
+         }
+
+       &--training{
+           top:65%;
+           left:50%;
+            transform: translate(-50%, -50%);
+       }
+       }
+
+
+    &--other{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items:left;
+    }
+
+
+}

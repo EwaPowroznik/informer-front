@@ -1,0 +1,29 @@
+.header{
+    width:91vw;
+    height:9vh;
+    display:grid;
+    grid-template-columns: 51% 22% 20%;
+    grid-gap:5%;
+    align-items: center;
+    position:relative;
+
+    &__text-box{
+        max-width:80%;
+        display:inline-block;
+      
+    }
+
+    &__button-box{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__popup{
+        width:80%;
+        height:5%;
+        display:inline-block;
+        margin:2vh 5vh 4vh 5vh;
+        border:1px solid blue;
+    }
+}
