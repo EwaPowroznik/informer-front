@@ -11,9 +11,9 @@
         cursor:pointer;
         position:relative;
         
-        border:0.5vh solid $color-blue-glow;
+        border:0.5vmin solid $color-blue-glow;
         border-radius: 2%;
-        box-shadow:0vh .1vh .1vh .1vh rgba($color-button-shadow,.7);
+        box-shadow:0vmin .1vmin .1vmin .1vmin rgba($color-button-shadow,.7);
         z-index: 20;
         transition:all .2s;
        
@@ -22,15 +22,15 @@
         &::before{
             content:"";
             background:rgba($color-grey-background, .8);
-            backdrop-filter: blur(1.2vh)brightness(200%);
-             -webkit-backdrop-filter: blur(1.2vh)brightness(200%);
-            box-shadow:inset 0vh .1vh .1vh .1vh rgba($color-button-shadow,.7);
+            backdrop-filter: blur(1.2vmin)brightness(200%);
+             -webkit-backdrop-filter: blur(1.2vmin)brightness(200%);
+            box-shadow:inset 0vmin .1vmin .1vmin .1vmin rgba($color-button-shadow,.7);
         }
     &:hover{
-        box-shadow:0vh .2vh .8vh .1vh rgba($color-button-shadow,.7);
+        box-shadow:0vmin .2vmin .8vmin .1vmin rgba($color-button-shadow,.7);
 
         &::before{
-            box-shadow:inset 0vh .2vh .8vh .1vh rgba($color-button-shadow,.7);
+            box-shadow:inset 0vmin .2vmin .8vmin .1vmin rgba($color-button-shadow,.7);
         }
     }
     &:active,
@@ -40,36 +40,60 @@
 
 
     &--decision{
-        width:16vh;
-        height:6vh;
+        width:16vmin;
+        height:6vmin;
         position:Absolute;
-        top:81%;
-        left:30%;
+       top:90%;
+       left:50%;
+       transform: translate(-50%,-50%);
+        margin:0 auto;
         z-index: 1;
 
         &::before{
             content:"";
-            width:15.1vh;
-            height:5.2vh;
+            width:15.4vmin;
+            height:5.2vmin;
             z-index: -10;
             position:Absolute;
             z-index:-1;
-            top:-3.5%;
-            left:0; 
+            top:-4%;
+            left:-1%; 
             }
         }
+    &--change{
+        width:16vmin;
+        height:4.4vmin;
+        position:Absolute;
+       top:90%;
+       left:50%;
+       transform: translate(-50%,-50%);
+        margin:0 auto;
+        z-index: 1;
+
+        &::before{
+            content:"";
+            width:15.4vmin;
+            height:3.6vmin;
+            z-index: -10;
+            position:Absolute;
+            z-index:-1;
+            top:-4%;
+            left:-1%; 
+            }
+        } 
+    
 
     &--accept{
-        width:16vh;
-        height:4vh;
+        width:16vmin;
+        height:4vmin;
         position:Absolute;
         top:83%;
         left:46%;
 
         &::before{
             content:"";
-            width:15.3vh;
-            height:3.3vh;
+            width:15.3vmin;
+            height:3.3vmin;
             z-index: -2;
             position:Absolute;
             top:-3%;
@@ -88,28 +112,28 @@
         border:none;
         background:transparent;
         transition: all .2s;
-        box-shadow: .3vh .3vh .6vh rgba($color-button-text-black,.7);
+        box-shadow: .3vmin .3vmin .6vmin rgba($color-button-text-black,.7);
     }
 
     &:hover{
-        transform:translateY(.2vh);
-        box-shadow: .5vh .5vh .8vh rgba($color-button-text-black,.7);
+        transform:translateY(.2vmin);
+        box-shadow: .5vmin .5vmin .8vmin rgba($color-button-text-black,.7);
     }
     &:active,
     &:focus{
         filter:brightness(120%);
-        transform:translateY(.1vh);
+        transform:translateY(.1vmin);
     }
 
    &--function{
-    height:8vh;
-    width:21vh;
+    height:8vmin;
+    width:21vmin;
     background: url("../img/zakończ\ dzień.png")no-repeat center/cover;
    }
 
    &--tylda{
-    height:8vh;
-    width:8vh;
+    height:8vmin;
+    width:8vmin;
     background:url("../img/tylda.png")no-repeat center/contain;
    }
 }
@@ -117,17 +141,17 @@
 .btn-popup{
 display:inline-block;
 text-align:center;
- border:1px solid violet;
- width:30%;
- padding:.85vh 2.3vh;
- border-radius: 3vh;
- margin-bottom:1vh;
+ width:32%;
+ height:auto;
+ padding:.9vmin 1vmin;
+ border-radius: 3vmin;
+ margin-bottom:1vmin;
  z-index:1;
  position:relative;
- background:rgba($color-black,.2);
-
-//  background:url("../img/mask.png") no-repeat center;
- 
+ overflow:hidden;
+ background:transparent;
+ border:none;
+ transition: all .5;
 
  &::before{
     content:'';
@@ -136,20 +160,48 @@ text-align:center;
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: .1; 
+    opacity: .5; 
+    filter:contrast(150%) brightness(20%);
     z-index: -1;
-    background:url("../img/mask.png")no-repeat center/contain;
+    background:url("../img/mask.png")no-repeat center/cover;
     overflow: hidden;
  }
 
  &--raid{
     @include action-default-color($color-raid);
-   
+    transition: all 1s;
 
+     &:hover{
+         color:rgba($color-white,.5);
+        background: rgba($color-raid, .5);
+        cursor:pointer;
+        
+     }
+    &:hover > ::before{
+        filter:contrast(150%) brightness(120%);
+    }
  }
-
-
+ &--provocation{
+     @include action-default-color($color-provocation);
+ }
+ &--recon{
+    @include action-default-color($color-recon);
+    filter:brightness(150%);
 }
+&--wiretapping{
+    @include action-default-color($color-wiretapping);
+}
+
+&--training{
+color:rgba($color-training-darker, .9);
+border:rgba($color-training, .8) .3vmin solid;
+ 
+  
+}
+}
+
+
+
 
     
 

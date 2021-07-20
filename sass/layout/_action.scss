@@ -1,6 +1,6 @@
 .action{
-   border:1px solid blue;
-   margin: 2.5vh 0;
+//   border:1px solid blue;
+   margin: 3vmin 0;
 
    &--raid, 
    &--provocation,
@@ -13,16 +13,65 @@
            left:50%;
            transform: translate(-50%, -50%);
        }
+    
    }
+   &--raid{
+       @include action-border($color-raid,36%,0vmin);
+       &::before{
+           @include shadow-before(38%);
+       }
+       &::after{
+           @include shadow-after(38%);
+       }
+   }
+   &--provocation{
+       @include action-border($color-provocation,25%,0vmin);
+       &::before{
+        @include shadow-before(26%);
+    }
+    &::after{
+        @include shadow-after(26%);
+    }
+   }
+   &--recon{
+       @include action-border($color-recon,25%,0vmin);
+       filter:brightness(120%);
+       &::before{
+        @include shadow-before(25%);
+    }
+    &::after{
+        @include shadow-after(25%);
+    }
+   }
+   &--wiretapping{
+       @include action-border($color-wiretapping,30%,0vmin);
+       &::before{
+        @include shadow-before(29%);
+    }
+    &::after{
+        @include shadow-after(29%);
+    }
+   }
+   &--training{
+       @include action-border($color-training,33%,14.55vmin);
+       &::before{
+        @include shadow-before(34%);
+    }
+    &::after{
+        @include shadow-after(34%);
+    }
+   }
+
+      
    &__button-box{
        position:absolute;
-       border:1px solid red;
+    //    border:1px solid red;
        width:90%;
        display:flex;
        align-items:center;
        justify-content:space-between;
        flex-wrap:wrap;
-
+       
          &--raid, 
          &--provocation,
          &--recon,
@@ -44,9 +93,63 @@
     &--other{
         display: flex;
         flex-direction:column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items:left;
+     
     }
 
+    &__form{
+        display:inline;
+        position:absolute;
+        top:0;
+        left:50%;
 
+        &--group{
+            display:inline;
+        }
+    
+    }
+
+   &__input{
+    
+    display:none;
+
+      &-label{
+        position:relative;
+        cursor: pointer;
+        margin:0 2vmin;
+      
+      }
+
+      &-checkbox{
+          position:absolute;
+         top:.5vmin;
+         left:-.5vmin;
+          width:3vmin;
+          height:3vmin;
+          border-radius: 50%;
+          background: transparent;
+          border:$color-blue-checkbox solid .1vmin;
+
+          &::after{
+              content:'';
+              display:inline-block;
+              width:3vmin;
+              height:3vmin;
+              border-radius: 50%;
+              position:absolute;
+              top:50%;
+              left:50%;
+              transform: translate(-50%,-50%);
+            background:$color-blue-glow;
+            border:$color-blue-checkbox solid .1vmin;
+            box-shadow:$color-blue-checkbox 0vmin 0vmin 1vmin .2vmin;
+            opacity:0;
+          }
+
+      }
+      &:checked ~ &-label &-checkbox::after{
+          opacity:1;
+      }
+   }
 }

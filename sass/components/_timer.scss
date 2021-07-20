@@ -2,12 +2,12 @@
     position:absolute;
     top:0;
     right:0;
-    height:7vh;
-    width:25vh;
+    height:7vmin;
+    width:25vmin;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url("../img/timer-bg.png")no-repeat center/cover;
-    box-shadow: .3vh .3vh .6vh rgba($color-button-text-black,.7); 
+    box-shadow: .3vmin .3vmin .6vmin rgba($color-button-text-black,.7); 
 }

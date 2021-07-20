@@ -1,6 +1,6 @@
 .footer{
     width:97vw;
-    height:7vh;
+    height:7vmin;
     position:Absolute;
     left:0;
     top:91%;
@@ -9,7 +9,7 @@
     align-items: center;
 
     &__logo-box{
-        width:25vh;
+        width:25vmin;
         height:auto;
         display:inline;
         text-align:Center;
@@ -19,7 +19,7 @@
         }
     }
     &__logogame-box{
-        width:15vh;
+        width:15vmin;
         height:auto;
         display:inline;
         text-align:right;

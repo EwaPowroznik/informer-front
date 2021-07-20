@@ -1,6 +1,6 @@
 .header{
     width:91vw;
-    height:9vh;
+    height:9vmin;
     display:grid;
     grid-template-columns: 51% 22% 20%;
     grid-gap:5%;
@@ -23,7 +23,7 @@
         width:80%;
         height:5%;
         display:inline-block;
-        margin:2vh 5vh 4vh 5vh;
-        border:1px solid blue;
+        margin:2.4vmin 5vmin 3.6vmin 2vmin;
+       
     }
 }

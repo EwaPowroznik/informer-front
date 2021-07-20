@@ -14,6 +14,7 @@ $color-observation:rgb(242, 242, 242);
 $color-observation-lighter:rgb(183, 178, 178);
 $color-training:rgb(108, 129, 144);
 $color-training-lighter:rgb(163, 186, 200);
+$color-training-darker:rgb(92, 104, 116);
 $color-rest:rgb(113, 194, 153);
 $color-rest-lighter:rgb(167, 233, 205);
 $color-wiretapping:rgb(1, 196, 219);
@@ -28,10 +29,11 @@ $color-recon-lighter:rgb(181, 141, 216);
 $color-text-white:rgb(255, 245, 245);
 $color-text-blue-light:rgb(187, 239, 249);
 $color-text-blue-dark:rgb(73, 223, 254);
-
+$color-blue-checkbox:rgb(139, 229, 250);
 
 // other
 $text-shadow: .4rem .4rem .5rem rgba($color-black, .3);
+$border-height:0.2vmin;
 
 
 

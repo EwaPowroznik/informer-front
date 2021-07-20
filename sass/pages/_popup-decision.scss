@@ -1,13 +1,13 @@
 .popup{
     width:100vw;
-    height:100vh;
+    height:100vmin;
     background:rgba($color-black,.3);
     position:Absolute;
     top:0;
     left:0;
     // opacity:0;
     // visibility:hidden;
-    backdrop-filter: blur(1.5vh);
+    backdrop-filter: blur(1.5vmin)brightness(30%);
     transition: all .3;
 
     &:target{
@@ -17,15 +17,15 @@
 
     &__content{
         width:64vw;
-        height:80vh;
+        height:80vmin;
         position:Absolute;
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        background:url(../img/bg.png);
+        background:url(../img/bg.png), ;
         background-size: cover;
-        border-radius: 1.2vh;
-        box-shadow: 1vh 1.4vh 2vh.7vh rgba($color-black,.7);
+        border-radius: 1.2vmin;
+        box-shadow: 1vmin 1.4vmin 2vmin.7vmin rgba($color-black,.7);
       
     }
 

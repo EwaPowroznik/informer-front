@@ -2,36 +2,17 @@
     border:2px solid $color-grey;
     position:relative;
 
-    &--one{
-       @include img-position;
-       
-    }
-    &--two{
-        @include img-position;
-      
-    }
-    &--three{
-        @include img-position;
-    }
-    &--four{
-        @include img-position;
+    &__img{
+        @include img-position; 
 
-    }
-    &--five{
-        @include img-position;
-        
-    }
-
-    &--six{
-        @include img-position;;
-    
-    }
-    &--seven{
-        @include img-position;
-    }
-    &--eight{
-        @include img-position;
-    }
+        &--smaller{
+            width:38%;
+            height:auto;
+            position:absolute;
+            top:-5%;
+            left:-5%;
+         }
+     }
 
     &__name{
         position:absolute;
@@ -45,7 +26,18 @@
         justify-content: center;
         text-align:center;
 
+        &--filled{
+        position:Absolute;
+        top:13%;
+        left:65%;
+        width:58%;
+        text-align:center;
+        transform:translate(-50%, -50%);
+
+        }
     }
+
+    
 
 }
 .form__name{
