@@ -1020,8 +1020,8 @@ body {
 }
 
 .player-box__decision .decision-box__right--wiretapping {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(127, 92, 167, 0.9))), url("../img/mask__box-train.png") center center/cover;
-  background: linear-gradient(to right, rgba(127, 92, 167, 0.9) rgba(127, 92, 167, 0.9)), url("../img/mask__box-train.png") center center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 196, 219, 0.9))), url("../img/mask__box-train.png") center center/cover;
+  background: linear-gradient(to right, rgba(1, 196, 219, 0.9) rgba(1, 196, 219, 0.9)), url("../img/mask__box-train.png") center center/cover;
   background-blend-mode: multiply;
 }
 

@@ -98,7 +98,7 @@
                     @include background-blend($color-recon,('../img/mask__box-train.png') );
                    }
                    &--wiretapping{
-                    @include background-blend($color-recon,('../img/mask__box-train.png') );
+                    @include background-blend($color-wiretapping,('../img/mask__box-train.png') );
                    }
 
                    &--training{
