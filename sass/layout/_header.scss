@@ -8,15 +8,15 @@
     position:relative;
 
     &__text-box{
-        max-width:80%;
+        max-width:88%;
         display:inline-block;
-      
     }
 
     &__button-box{
         display:flex;
         align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 1vmin;
     }
 
     &__popup{

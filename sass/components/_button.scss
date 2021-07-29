@@ -87,7 +87,7 @@
         width:16vmin;
         height:4vmin;
         position:Absolute;
-        top:83%;
+        top:82%;
         left:46%;
 
         &::before{
@@ -126,14 +126,14 @@
     }
 
    &--function{
-    height:8vmin;
-    width:21vmin;
+    height:7vmin;
+    width:18vmin;
     background: url("../img/zakończ\ dzień.png")no-repeat center/cover;
    }
 
    &--tylda{
-    height:8vmin;
-    width:8vmin;
+    height:7vmin;
+    width:7vmin;
     background:url("../img/tylda.png")no-repeat center/contain;
    }
 }

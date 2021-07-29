@@ -1,7 +1,7 @@
 .popup {
     width:100vw;
     height:105vmin;
-    background: rgba($color-black, 0.3);
+    background: rgba($color-black, 0.4);
     position: fixed;
     top: 48%;
     left: 50%;
@@ -9,7 +9,7 @@
     opacity: 1;
     visibility: visible;
     display: block;
-    backdrop-filter: blur(1.5vmin) brightness(30%);
+    backdrop-filter: contrast(100%)blur(2vmin) !important;
     transition: all 0.3;
     transform: translate(-50%, -50%);
 
@@ -20,6 +20,7 @@
         position: fixed;
         display: block;
     }
+    
 
 
     &__content{

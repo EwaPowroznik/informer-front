@@ -33,6 +33,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Russo One Regular", sans-serif;
 }
 
 body {
@@ -41,10 +42,22 @@ body {
   height: 100vmin;
   overflow-x: hidden;
   overflow-y: hidden;
+  position: relative;
   background: url(../img/bg.png);
   background-size: cover;
-  -webkit-backdrop-filter: contrast(130%);
-          backdrop-filter: contrast(130%);
+}
+
+body::before {
+  content: '';
+  background: url(../img/bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: Absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: contrast(140%);
+          filter: contrast(140%);
 }
 
 @font-face {
@@ -63,7 +76,6 @@ body {
 }
 
 .heading-primary {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 3.5vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -111,6 +123,17 @@ body {
   right: 0;
   -webkit-transform: translatex(110%);
           transform: translatex(110%);
+}
+
+.heading-primary--smaller {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#49dffe), color-stop(40%, #49dffe), color-stop(40%, #bbeff9), color-stop(60%, #bbeff9), color-stop(60%, #49dffe), to(#49dffe));
+  background-image: linear-gradient(to top, #49dffe 0%, #49dffe 40%, #bbeff9 40%, #bbeff9 60%, #49dffe 60%, #49dffe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0.1rem 0.1rem 0.8rem rgba(187, 239, 249, 0.5);
+  font-size: 90%;
+  margin-left: 52vmin;
 }
 
 .heading-primary--raid {
@@ -314,7 +337,6 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 2.2vmin;
   color: #fff5f5;
   text-transform: uppercase;
@@ -324,6 +346,7 @@ body {
 }
 
 .btn__text {
+  font-family: "Russo One Regular";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -350,7 +373,7 @@ body {
 }
 
 .btn-popup-text {
-  font-family: "Russo One Regular", sans-serif;
+  font-family: "Russo One Regular";
   font-size: 1.8vmin;
   text-transform: uppercase;
   font-weight: 100;
@@ -365,7 +388,6 @@ body {
 }
 
 .timer__text {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 1.3vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -380,7 +402,6 @@ body {
 }
 
 .decision__text {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 2vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -388,7 +409,6 @@ body {
 }
 
 .dice__text {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 2vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -397,8 +417,23 @@ body {
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
+.dice__text--single {
+  color: #fff5f5;
+  z-index: 2;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  font-size: 3vmin;
+}
+
+.dice-effect__label {
+  display: inline-block;
+  text-align: center;
+  color: #fff5f5;
+  font-size: 1.4vmin;
+  text-transform: uppercase;
+  margin-bottom: 1vmin;
+}
+
 .analysis__text {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 2.5vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -407,7 +442,6 @@ body {
 }
 
 .analysis__text--smaller {
-  font-family: "Russo One Regular", sans-serif;
   font-size: 1.8vmin;
   text-transform: uppercase;
   font-weight: 400;
@@ -416,6 +450,10 @@ body {
 
 .u-padding-button {
   padding: 1vmin 1vmin !important;
+}
+
+.u-margin-bottom {
+  margin-bottom: 2.2vmin;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -511,7 +549,7 @@ body {
   width: 16vmin;
   height: 4vmin;
   position: Absolute;
-  top: 83%;
+  top: 82%;
   left: 46%;
 }
 
@@ -551,14 +589,14 @@ body {
 }
 
 .btn-header--function {
-  height: 8vmin;
-  width: 21vmin;
+  height: 7vmin;
+  width: 18vmin;
   background: url("../img/zakończ dzień.png") no-repeat center/cover;
 }
 
 .btn-header--tylda {
-  height: 8vmin;
-  width: 8vmin;
+  height: 7vmin;
+  width: 7vmin;
   background: url("../img/tylda.png") no-repeat center/contain;
 }
 
@@ -802,7 +840,7 @@ body {
 }
 
 .header__text-box {
-  max-width: 80%;
+  max-width: 88%;
   display: inline-block;
 }
 
@@ -816,6 +854,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 1vmin;
 }
 
 .header__popup {
@@ -835,6 +874,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
+  -webkit-filter: brightness(90%) contrast(110%);
+          filter: brightness(90%) contrast(110%);
 }
 
 .player-box {
@@ -1288,6 +1329,90 @@ body {
   z-index: 1;
 }
 
+.player-box__dices {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  top: 27%;
+  left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.player-box__dices .dice-effect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 45%;
+  margin: 0 4%;
+  position: relative;
+}
+
+.player-box__dices .dice-effect .single-dice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 60%;
+  position: relative;
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
+}
+
+.player-box__dices .dice-effect .single-dice__frame {
+  width: 100%;
+  height: 100%;
+  position: Absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-filter: brightness(110%) contrast(110%);
+          filter: brightness(110%) contrast(110%);
+}
+
+.player-box__dices .dice-effect .single-dice__img {
+  width: 100%;
+  height: 100%;
+  position: Absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
 .form__name .name-input {
   border: none;
   background: transparent;
@@ -1629,7 +1754,7 @@ body {
 .popup {
   width: 100vw;
   height: 105vmin;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 48%;
   left: 50%;
@@ -1637,8 +1762,8 @@ body {
   opacity: 1;
   visibility: visible;
   display: block;
-  -webkit-backdrop-filter: blur(1.5vmin) brightness(30%);
-          backdrop-filter: blur(1.5vmin) brightness(30%);
+  -webkit-backdrop-filter: contrast(100%) blur(2vmin) !important;
+          backdrop-filter: contrast(100%) blur(2vmin) !important;
   -webkit-transition: all 0.3;
   transition: all 0.3;
   -webkit-transform: translate(-50%, -50%);

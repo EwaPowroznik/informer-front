@@ -12,7 +12,7 @@
 
 
 .heading-primary{
-    font-family:"Russo One Regular", sans-serif ;
+   
     font-size:3.5vmin;
     text-transform: uppercase;
     font-weight: 400;
@@ -56,6 +56,16 @@
                 right:0; 
                 transform:translatex(110%);   
             }       
+        }
+
+        &--smaller{
+            @include  text-background ( $color-text-blue-dark,$color-text-blue-light);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            text-shadow: .1rem .1rem .8rem rgba($color-text-blue-light, .5); 
+            font-size:90%;   
+            margin-left:52vmin; 
         }
 
         &--raid{
@@ -187,16 +197,12 @@
                 top:45%;
                 right:0; 
                 transform:translatex(105%); 
-               
-
-            }
-            
+            }  
         }
 }
         
        
 .heading-secondary{
-    font-family:"Russo One Regular", sans-serif ;
     font-size:2.2vmin;
     color:$color-text-white;
     text-transform: uppercase;
@@ -205,6 +211,7 @@
     mix-blend-mode: lighten;  
 }
 .btn__text{
+    font-family:"Russo One Regular";
     position:absolute;
     top:50%;
     left:50%;
@@ -226,7 +233,7 @@
     
 }
 .btn-popup-text{
-    font-family:"Russo One Regular", sans-serif ;
+    font-family:"Russo One Regular";
     font-size:1.8vmin;
     text-transform: uppercase;
     font-weight: 100;
@@ -242,7 +249,6 @@
 
 
 .timer__text{
-    font-family:"Russo One Regular", sans-serif ;
     font-size:1.3vmin;
     text-transform: uppercase;
     font-weight: 400;
@@ -256,7 +262,6 @@
 }
 
 .decision__text{
-    font-family:"Russo One Regular", sans-serif ;
     font-size:2vmin;
     text-transform: uppercase;
     font-weight: 400;
@@ -264,16 +269,30 @@
 
 }
 .dice__text{
-    font-family:"Russo One Regular", sans-serif ;
     font-size:2vmin;
     text-transform: uppercase;
     font-weight: 400;
     color:$color-text-white;
     z-index:2;
     text-shadow: -.5px 0 $color-black, 0 0.5px $color-black, .5px 0 $color-black, 0 -.5px $color-black;
+
+    &--single{
+    color:$color-text-white;
+    z-index:2;
+    text-shadow: -.5px 0 $color-black, 0 0.5px $color-black, .5px 0 $color-black, 0 -.5px $color-black;
+    font-size:3vmin;
+    }
+}
+.dice-effect__label{
+    display:inline-block;
+    text-align:center;
+    color:$color-text-white;
+    font-size:1.4vmin;
+    text-transform: uppercase;
+    margin-bottom:1vmin;
+
 }
 .analysis__text{
-    font-family:"Russo One Regular", sans-serif ;
     font-size:2.5vmin;
     text-transform: uppercase;
     font-weight: 400;
@@ -281,7 +300,6 @@
     line-height: 0.9;
 
     &--smaller{
-        font-family:"Russo One Regular", sans-serif ;
         font-size: 1.8vmin;
         text-transform: uppercase;
         font-weight: 400;
