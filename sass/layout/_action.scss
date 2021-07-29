@@ -56,9 +56,11 @@
        @include action-border($color-training,33%,14.55vmin);
        &::before{
         @include shadow-before(34%);
+        z-index:-1;
     }
     &::after{
         @include shadow-after(34%);
+        z-index:-1;
     }
    }
 
@@ -67,10 +69,7 @@
        position:absolute;
     //    border:1px solid red;
        width:90%;
-       display:flex;
-       align-items:center;
-       justify-content:space-between;
-       flex-wrap:wrap;
+       @include flex-space_between;
        
          &--raid, 
          &--provocation,
@@ -83,9 +82,9 @@
          }
 
        &--training{
-           top:65%;
+           top:68%;
            left:50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -52%);
        }
        }
 

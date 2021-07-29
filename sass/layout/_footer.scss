@@ -4,9 +4,8 @@
     position:Absolute;
     left:0;
     top:91%;
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
+    @include flex-space_between;
+    z-index:-1;
 
     &__logo-box{
         width:25vmin;

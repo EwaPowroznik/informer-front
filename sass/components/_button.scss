@@ -61,10 +61,10 @@
             }
         }
     &--change{
-        width:16vmin;
+        width:18vmin;
         height:4.4vmin;
         position:Absolute;
-       top:90%;
+       top:91%;
        left:50%;
        transform: translate(-50%,-50%);
         margin:0 auto;
@@ -72,7 +72,7 @@
 
         &::before{
             content:"";
-            width:15.4vmin;
+            width:17.4vmin;
             height:3.6vmin;
             z-index: -10;
             position:Absolute;
@@ -145,7 +145,7 @@ text-align:center;
  height:auto;
  padding:.9vmin 1vmin;
  border-radius: 3vmin;
- margin-bottom:1vmin;
+ margin-bottom:.8vmin;
  z-index:1;
  position:relative;
  overflow:hidden;

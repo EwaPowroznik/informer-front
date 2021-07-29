@@ -6,7 +6,7 @@
         @include img-position; 
 
         &--smaller{
-            width:38%;
+            width:33%;
             height:auto;
             position:absolute;
             top:-5%;
@@ -21,10 +21,8 @@
         width:55%;
 
         transform:translate(-50%, -50%);
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        text-align:center;
+        @include flex-row-center;
+        
 
         &--filled{
         position:Absolute;
@@ -37,9 +35,220 @@
         }
     }
 
-    
+    &__link{
+        text-decoration: none;
+        color:$color-button-text-black;
+    }
 
-}
+    &__decision{
+        @include player-box-properities;
+
+        .decision-box{
+               width:92%;
+               height:30%;
+               @include flex-row-center;
+               box-shadow: .2vmin .3vmin .5vmin .2vmin rgba($color-black,.5);
+
+              
+               &__left{
+                  @include decision-box-properities;
+                   color:$color-black;
+
+                   &--raid{
+                    background-color: $color-raid;
+                   }
+                   &--provocation{
+                    background-color: $color-provocation;
+                   }
+                   &--recon{
+                    background-color:$color-recon;
+                   }
+                   &--wiretapping{
+                    background-color: $color-wiretapping;
+                   }
+
+                   &--training{
+                       background-color: $color-training;
+                       width:35%;
+                   }
+                   &--rest{
+                    background-color: $color-rest;
+                   }
+                   &--observation{
+                       background-color: $color-observation;
+
+                   }
+                   &--analysis{
+                    background-color: $color-analysis;
+                   }
+               }
+
+               &__right{
+                @include decision-box-properities;
+                   color:$color-text-white;
+
+
+                   &--raid{
+                       @include background-blend($color-raid,('../img/mask__box-train.png') );
+                   }
+                   &--provocation{
+                    @include background-blend($color-provocation,('../img/mask__box-train.png') );
+                   }
+                   &--recon{
+                    @include background-blend($color-recon,('../img/mask__box-train.png') );
+                   }
+                   &--wiretapping{
+                    @include background-blend($color-recon,('../img/mask__box-train.png') );
+                   }
+
+                   &--training{
+                       width:65%;
+                       @include background-blend($color-training,('../img/mask__box-training.png') );
+                   }
+                   &--rest{
+                    @include background-blend($color-rest,('../img/mask__box-clock.png') );
+                   }
+                   &--observation{
+                    @include background-blend($color-observation,('../img/mask__box-clock.png') );
+                   }
+                   &--analysis{
+                    @include background-blend($color-analysis,('../img/mask__box-clock.png') );
+                   
+                   }
+                 
+               }
+
+              
+        }
+    }
+    &__analysis{
+        @include player-box-properities;
+
+        .analysis-box{
+            width:92%;
+            height:30%;
+           @include flex-row-center;
+            box-shadow: .2vmin .3vmin .5vmin .2vmin rgba($color-black,.5);
+
+            &__left{
+                @include decision-box-properities;
+                background-color: $color-analysis;
+                color:$color-black;
+
+            }
+            &__right{
+                @include decision-box-properities;
+                background:linear-gradient(to right,
+                rgba($color-analysis-lighter,.6)
+                rgba($color-analysis-lighter,.6))
+                ,url(../img/mask__analysis.png)center center/cover;
+                filter:brightness(120%);
+                background-blend-mode:multiply;
+            }
+        }
+        .analysis-effect{
+            width:92%;
+            height:66%;
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+
+            &-left,
+            &-right{
+                width:49%;
+                height:100%;
+             @include flex-column-center;
+             box-shadow: .2vmin .3vmin .5vmin .2vmin rgba($color-black,.5);
+            }
+
+            &-top{
+                width:100%;
+                height:55%;
+                @include flex-column-center;
+                color:$color-text-white;
+              
+               
+                
+                &--raid{
+                    @include background-blend($color-raid,('../img/mask__analysis-effect.png') );  
+                }
+                &--provocation{
+                    @include background-blend($color-provocation,('../img/mask__analysis-effect.png') );
+                }
+                &--recon{
+                    @include background-blend($color-recon-lighter,('../img/mask__analysis-effect.png') );
+                }
+                &--wiretapping{
+                    @include background-blend($color-wiretapping,('../img/mask__analysis-effect.png') );
+                }
+            }
+            &-bottom{
+                width:100%;
+                height:45%;
+                color:$color-black;
+                @include flex-column-center;
+               
+                &--raid{
+                    background-color: $color-raid;
+                   }
+                   &--provocation{
+                    background-color: $color-provocation;
+                   }
+                   &--recon{
+                    background-color:$color-recon-lighter;
+                   }
+                   &--wiretapping{
+                    background-color: $color-wiretapping;
+                   }
+
+            }
+        }
+        .analysis__dices{
+            @include flex-row-center;
+            width:100%;
+            height:100%;
+          
+
+            .dice{
+                @include flex-column-center;
+               width:30%;
+               height:70%;
+               position:relative;
+
+               &__img{
+                   width:75%;
+                   height:100%;
+                   position:Absolute;
+                   top:50%;
+                   left:50%;
+                   transform:translate(-50%,-50%);
+                   z-index:1;
+                
+               }
+               
+
+                // &--dragon{
+                //  background: url(../img/smok.png)no-repeat center center/contain; 
+                // }
+                // &--wasp{
+                //     background: url(../img/osy.png)no-repeat center center/contain; 
+                // }
+                // &--shark{
+                //     background: url(../img/rekiny.png)no-repeat center center/contain; 
+                // }
+                // &--cobra{
+                //     background: url(../img/kobry.png)no-repeat center center/contain; 
+                // }
+            }
+        }
+       
+
+    }         
+
+    } 
+
+
+  
 .form__name{
     .name-input{
         border:none;
@@ -87,3 +296,4 @@
 
 
 }
+

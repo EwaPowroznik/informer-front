@@ -31,7 +31,7 @@
             -webkit-background-clip: text;
             color:transparent;
             padding-left:10vmin;
-            text-shadow: 0rem 0rem .5rem rgba($color-text-blue-light, .5);
+            text-shadow: .1rem .1rem .8rem rgba($color-text-blue-light, .5);
 
             &::before{
                 content:"";
@@ -227,7 +227,7 @@
 }
 .btn-popup-text{
     font-family:"Russo One Regular", sans-serif ;
-    font-size:1.7vmin;
+    font-size:1.8vmin;
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing:0.2vmin;
@@ -235,7 +235,7 @@
     transition: all .5s;
 
      &--smaller{
-     font-size:1.2vmin;
+     font-size:1.3vmin;
      }
   
 }
@@ -253,6 +253,40 @@
     font-weight: 300;
     color:$color-blue-glow;
     font-size:3vmin;
+}
+
+.decision__text{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:2vmin;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left:1vmin;
+
+}
+.dice__text{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:2vmin;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:$color-text-white;
+    z-index:2;
+    text-shadow: -.5px 0 $color-black, 0 0.5px $color-black, .5px 0 $color-black, 0 -.5px $color-black;
+}
+.analysis__text{
+    font-family:"Russo One Regular", sans-serif ;
+    font-size:2.5vmin;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left:1vmin;
+    line-height: 0.9;
+
+    &--smaller{
+        font-family:"Russo One Regular", sans-serif ;
+        font-size: 1.8vmin;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-left:1vmin;
+    }
 }
 
 

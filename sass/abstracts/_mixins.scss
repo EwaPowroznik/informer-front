@@ -72,5 +72,49 @@
     height:100%;
     z-index:2;
     box-shadow:rgba($color-black,.2vmin) .3vmin -.3vmin .8vmin;
+}
 
+@mixin decision-box-properities{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+@mixin player-box-properities{
+    position:absolute;
+        width:100%;
+        height:55%;
+        top:27%;
+        left:0;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+@mixin flex-row-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+@mixin flex-column-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-space_between{
+    display:flex;
+       align-items:center;
+       justify-content:space-between;
+       flex-wrap:wrap;
+}
+
+@mixin background-blend($color-gradient,$mask){
+    background:linear-gradient(to right,rgba($color-gradient,.9)rgba($color-gradient,.9)),url($mask)center center/cover;
+    background-blend-mode: multiply;
 }

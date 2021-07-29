@@ -1,19 +1,26 @@
-.popup{
+.popup {
     width:100vw;
-    height:100vmin;
-    background:rgba($color-black,.3);
-    position:Absolute;
-    top:0;
-    left:0;
-    // opacity:0;
-    // visibility:hidden;
-    backdrop-filter: blur(1.5vmin)brightness(30%);
-    transition: all .3;
+    height:105vmin;
+    background: rgba($color-black, 0.3);
+    position: fixed;
+    top: 48%;
+    left: 50%;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    backdrop-filter: blur(1.5vmin) brightness(30%);
+    transition: all 0.3;
+    transform: translate(-50%, -50%);
 
-    &:target{
-        opacity:1;
+    &:target {
+        opacity: 1;
         visibility: visible;
+        z-index: 10;
+        position: fixed;
+        display: block;
     }
+
 
     &__content{
         width:64vw;
