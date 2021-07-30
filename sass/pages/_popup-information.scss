@@ -17,11 +17,19 @@
     }
 
     .information-content{
-        width:85%;
-        height:90%;
-        border:1px solid pink;
+        width:78%;
+        height:80%;
+       position:Absolute;
+       top:15%;
+       left:5%;
         padding:.5vmin;
         font-family:'Capsuula';
+        @include flex-column-left;
+    }
+    .information__players-list{
+        width:100%;
+        height:auto;
+        
     }
 
 }

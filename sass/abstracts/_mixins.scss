@@ -61,8 +61,8 @@
     top:0;left:0;
     width:$width;
     height:100%;
-    z-index:2;
-    box-shadow:rgba($color-black,.2vmin) -.3vmin -.3vmin .8vmin;
+    z-index:-1;
+    box-shadow:rgba($color-black,.3vmin) -.3vmin -.3vmin .8vmin;
 }
 @mixin shadow-after($width){
     content:'';
@@ -70,8 +70,8 @@
     top:0;right:0;
     width:$width;
     height:100%;
-    z-index:2;
-    box-shadow:rgba($color-black,.2vmin) .3vmin -.3vmin .8vmin;
+    z-index:-1;
+    box-shadow:rgba($color-black,.3vmin) .3vmin -.3vmin .8vmin;
 }
 
 @mixin decision-box-properities{
@@ -113,6 +113,14 @@
        justify-content:space-between;
        flex-wrap:wrap;
 }
+@mixin flex-column-left{
+display:flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content:center;
+
+ }
+
 
 @mixin background-blend($color-gradient,$mask){
     background:linear-gradient(to right,rgba($color-gradient,.9)rgba($color-gradient,.9)),url($mask)center center/cover;
