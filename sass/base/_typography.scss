@@ -289,7 +289,7 @@
     color:$color-text-white;
     font-size:1.4vmin;
     text-transform: uppercase;
-    margin-bottom:1vmin;
+    margin-top:.2vmin;
 
 }
 .analysis__text{
@@ -305,6 +305,12 @@
         font-weight: 400;
         padding-left:1vmin;
     }
+}
+
+.information__text{
+    font-family:'Capsuula';
+    color:$color-white;
+    font-size:2.5vmin;
 }
 
 

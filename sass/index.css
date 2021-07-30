@@ -430,7 +430,7 @@ body::before {
   color: #fff5f5;
   font-size: 1.4vmin;
   text-transform: uppercase;
-  margin-bottom: 1vmin;
+  margin-top: .2vmin;
 }
 
 .analysis__text {
@@ -448,12 +448,22 @@ body::before {
   padding-left: 1vmin;
 }
 
+.information__text {
+  font-family: 'Capsuula';
+  color: white;
+  font-size: 2.5vmin;
+}
+
 .u-padding-button {
   padding: 1vmin 1vmin !important;
 }
 
 .u-margin-bottom {
   margin-bottom: 2.2vmin;
+}
+
+.u-margin-top {
+  margin-top: 2.2vmin;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -672,6 +682,34 @@ body::before {
   border: rgba(108, 129, 144, 0.8) 0.3vmin solid;
 }
 
+.btn-information, .btn-information:link, .btn-information:visited {
+  position: absolute;
+  top: 40%;
+  left: 85%;
+  cursor: pointer;
+  height: 10vmin;
+  width: 10vmin;
+  background: url("../img/dalej-button.png") no-repeat center/contain;
+  border: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-information:hover, .btn-information:link:hover, .btn-information:visited:hover {
+  -webkit-transform: translateY(0.2vmin);
+          transform: translateY(0.2vmin);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  border: none;
+}
+
+.btn-information:active, .btn-information:focus, .btn-information:link:active, .btn-information:link:focus, .btn-information:visited:active, .btn-information:visited:focus {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-transform: translateY(0.1vmin);
+          transform: translateY(0.1vmin);
+}
+
 .timer__box {
   position: absolute;
   top: 0;
@@ -837,6 +875,7 @@ body::before {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: .3vmin;
 }
 
 .header__text-box {
@@ -1356,9 +1395,9 @@ body::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1385,6 +1424,7 @@ body::before {
   width: 70%;
   height: 60%;
   position: relative;
+  margin-bottom: .4vmin;
   -webkit-filter: contrast(130%);
           filter: contrast(130%);
 }
@@ -1761,9 +1801,9 @@ body::before {
   z-index: 10;
   opacity: 1;
   visibility: visible;
-  display: block;
-  -webkit-backdrop-filter: contrast(100%) blur(2vmin) !important;
-          backdrop-filter: contrast(100%) blur(2vmin) !important;
+  display: none;
+  -webkit-backdrop-filter: contrast(100%) blur(2vmin);
+          backdrop-filter: contrast(100%) blur(2vmin);
   -webkit-transition: all 0.3;
   transition: all 0.3;
   -webkit-transform: translate(-50%, -50%);
@@ -1797,5 +1837,31 @@ body::before {
   width: 95%;
   height: 72%;
   margin: 0 auto;
+}
+
+.popup__content--smaller {
+  width: 40vw;
+  height: 50vmin;
+  position: Absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2.5vmin;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/bg.png);
+  background-size: cover;
+  border: 0.4vmin solid #09d5ff;
+  border-radius: 1.2vmin;
+  -webkit-box-shadow: 1vmin 1.4vmin 2vmin 0.7vmin rgba(0, 0, 0, 0.7), inset 0vmin 0vmin 1.2vmin 0.3vmin rgba(187, 239, 249, 0.5);
+          box-shadow: 1vmin 1.4vmin 2vmin 0.7vmin rgba(0, 0, 0, 0.7), inset 0vmin 0vmin 1.2vmin 0.3vmin rgba(187, 239, 249, 0.5);
+  position: relative;
+}
+
+.popup__content .information-content {
+  width: 85%;
+  height: 90%;
+  border: 1px solid pink;
+  padding: .5vmin;
+  font-family: 'Capsuula';
 }
 /*# sourceMappingURL=index.css.map */

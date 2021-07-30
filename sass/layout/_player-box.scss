@@ -152,7 +152,7 @@
             display:flex;
             justify-content:space-between;
             align-items: center;
-
+            
             &-left,
             &-right{
                 width:49%;
@@ -258,7 +258,7 @@
         .dice-effect{
             display:flex;
             flex-direction: column;
-            justify-content:space-between;
+            justify-content:flex-start;
             align-items: center;
            width:25%;
            height:45%;
@@ -270,6 +270,7 @@
             width:70%;
             height:60%;
             position:relative;
+            margin-bottom:.4vmin;
             filter:contrast(130%);
 
                  &__frame{

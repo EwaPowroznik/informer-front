@@ -8,8 +8,9 @@
     z-index: 10;
     opacity: 1;
     visibility: visible;
-    display: block;
-    backdrop-filter: contrast(100%)blur(2vmin) !important;
+    // display: block;
+    display:none;
+    backdrop-filter: contrast(100%)blur(2vmin);
     transition: all 0.3;
     transform: translate(-50%, -50%);
 

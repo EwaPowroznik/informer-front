@@ -200,6 +200,34 @@ border:rgba($color-training, .8) .3vmin solid;
 }
 }
 
+.btn-information{
+    &,
+    &:link,
+    &:visited{
+    position:absolute;
+        top:40%;
+        left:85%;
+        cursor:pointer;
+        height:10vmin;
+        width:10vmin;
+        background:url("../img/dalej-button.png")no-repeat center/contain;
+        border:none;
+        transition:all .2s;
+
+        &:hover{
+            transform:translateY(.2vmin);
+            filter:brightness(90%);
+            border:none;
+        }
+        &:active,
+        &:focus{
+            filter:brightness(120%);
+            transform:translateY(.1vmin);
+        }
+
+}
+}
+
 
 
 
