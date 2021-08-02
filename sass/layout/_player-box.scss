@@ -144,7 +144,10 @@
                 ,url(../img/mask__analysis.png)center center/cover;
                 filter:brightness(120%);
                 background-blend-mode:multiply;
+
+            
             }
+          
         }
         .analysis-effect{
             width:92%;
@@ -164,9 +167,6 @@
             &-top{
                 width:100%;
                 height:55%;
-                // display:flex;
-                // flex-direction: column;
-                // justify-content: center;
                 @include flex-column-center;
                 color:$color-text-white;
               
@@ -228,20 +228,6 @@
                    z-index:1;
                 
                }
-               
-
-                // &--dragon{
-                //  background: url(../img/smok.png)no-repeat center center/contain; 
-                // }
-                // &--wasp{
-                //     background: url(../img/osy.png)no-repeat center center/contain; 
-                // }
-                // &--shark{
-                //     background: url(../img/rekiny.png)no-repeat center center/contain; 
-                // }
-                // &--cobra{
-                //     background: url(../img/kobry.png)no-repeat center center/contain; 
-                // }
             }
         }
        

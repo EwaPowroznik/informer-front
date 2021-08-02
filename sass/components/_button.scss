@@ -15,7 +15,7 @@
         border-radius: 2%;
         box-shadow:0vmin .1vmin .1vmin .1vmin rgba($color-button-shadow,.7);
         z-index: 20;
-        transition:all .2s;
+        transition:all ease-in .2s;
        
         }
 
@@ -52,7 +52,7 @@
         &::before{
             content:"";
             width:15.4vmin;
-            height:5.2vmin;
+            height:5.4vmin;
             z-index: -10;
             position:Absolute;
             z-index:-1;
@@ -151,68 +151,138 @@ text-align:center;
  overflow:hidden;
  background:transparent;
  border:none;
- transition: all .5;
+ transition: all ease-out .3s;
 
  &::before{
     content:'';
     position:Absolute;
-    top: 1%; 
+    top: 0; 
     left: 0;
     width: 100%; 
     height: 100%;  
-    opacity: .5; 
-    filter:contrast(150%) brightness(20%);
-    z-index: -1;
-    background:url("../img/mask.png")no-repeat center/cover;
+    background:linear-gradient(to right,rgba($color-black,.4)rgba($color-black,.4)),url(../img/mask.png)center center/cover;
+    opacity:.2;
+    background-blend-mode:multiply;
+    filter:brightness(70%) contrast(200%);
     overflow: hidden;
+    z-index: -1;
+    transition: all ease-in .2s;
+   
  }
+        &:hover{
+            cursor:pointer;
 
- &--raid{
-    @include action-default-color($color-raid);
-    transition: all 1s;
+            & .btn-popup-text{
+                color:rgba($color-text-white,.5);
+        text-shadow:rgba($color-black, .8) .2vmin .2vmin .5vmin;
+            }
+        }
 
-     &:hover{
-         color:rgba($color-white,.5);
-        background: rgba($color-raid, .5);
-        cursor:pointer;
-        
-     }
-    &:hover > ::before{
-        filter:contrast(150%) brightness(120%);
-    }
- }
- &--provocation{
-     @include action-default-color($color-provocation);
- }
- &--recon{
-    @include action-default-color($color-recon);
-    filter:brightness(150%);
-}
-&--wiretapping{
-    @include action-default-color($color-wiretapping);
-}
+            &--raid{
+                @include action-default-color($color-raid);
 
-&--training{
-color:rgba($color-training-darker, .9);
-border:rgba($color-training, .8) .3vmin solid;
- 
-  
-}
-}
+                &:hover::before{
+                    @include background-blend-popup($color-raid);
+                }
+              
+            }
+            &--provocation{
+                @include action-default-color($color-provocation);
+                &:hover::before{
+                    @include background-blend-popup($color-provocation);
+                }
+            }
+            &--recon{
+                @include action-default-color($color-recon);
+                filter:brightness(120%);
+                &:hover::before{
+                    @include background-blend-popup($color-recon);
+                }
+            }
+            &--wiretapping{
+                @include action-default-color($color-wiretapping);
+                &:hover::before{
+                    @include background-blend-popup($color-wiretapping);
+                }
+            }
 
+            &--training{
+            color:rgba($color-training-darker, .9);
+            border:rgba($color-training, .8) .3vmin solid;
+            &:hover::before{
+                @include background-blend-popup($color-training);
+            }
+            }
+    &--learned{
+            color:rgba($color-text-white, .6);
+            border:rgba($color-blue-glow, .6) .2vmin solid;
+            box-shadow: 0vmin 0vmin .8vmin .1vmin rgba($color-blue-glow, .4),inset 0vmin 0vmin .1vmin  rgba($color-blue-glow, .6) ;
+
+                &::before{
+                    filter:brightness(120%);
+                    opacity:.5;
+                }
+            &:hover{
+            cursor: default;
+            color:rgba($color-text-white, .4);
+            } 
+        }
+
+    &-clicked{
+        filter:brightness(100%);
+        border:rgba($color-blue-glow, 1) .3vmin solid;
+        box-shadow: 0vmin 0vmin .7vmin .4vmin rgba($color-blue-glow, .7);
+        transition: all ease-out .3s;
+
+        & .btn-popup-text{
+        color:rgba($color-text-white, .9);
+        text-shadow:rgba($color-black, .7) .3vmin .3vmin .3vmin;
+        }
+        &:hover{
+           filter:drop-shadow(0 0 1vmin rgba($color-blue-glow, .9) );
+        }
+        &--raid{
+            &::before{
+             @include background-blend-clicked($color-raid);
+            }
+        }
+        &--provocation{
+            &::before{
+             @include background-blend-clicked($color-provocation);
+            }
+        }
+       &--recon{
+           &::before{
+            @include background-blend-clicked($color-recon);
+           }
+       }
+       &--wiretapping{
+        &::before{
+         @include background-blend-clicked($color-wiretapping);
+            }
+        }
+        &--training{
+            &::before{
+             @include background-blend-clicked($color-training);
+            }
+    }           
+}             
+               
+}
 .btn-information{
     &,
     &:link,
     &:visited{
     position:absolute;
-        top:40%;
-        left:85%;
-        cursor:pointer;
+    top:40%;
+    left:85%;
+    cursor:pointer;
         height:10vmin;
         width:10vmin;
         background:url("../img/dalej-button.png")no-repeat center/contain;
         border:none;
         transition:all .2s;
+     
 
         &:hover{
             transform:translateY(.2vmin);

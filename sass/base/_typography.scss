@@ -234,12 +234,14 @@
 }
 .btn-popup-text{
     font-family:"Russo One Regular";
-    font-size:1.8vmin;
+    font-size:1.7vmin;
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing:0.2vmin;
     text-shadow:$text-shadow;
     transition: all .5s;
+    filter: contrast(120%)brightness(110%);
+    transition: all ease-out .3s;
 
      &--smaller{
      font-size:1.3vmin;
@@ -266,6 +268,7 @@
     text-transform: uppercase;
     font-weight: 400;
     padding-left:1vmin;
+    // text-shadow: 0 0 .5vmin rgba($color-black, .7);
 
 }
 .dice__text{

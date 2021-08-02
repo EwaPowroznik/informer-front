@@ -375,13 +375,17 @@ body::before {
 
 .btn-popup-text {
   font-family: "Russo One Regular";
-  font-size: 1.8vmin;
+  font-size: 1.7vmin;
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 0.2vmin;
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
   -webkit-transition: all .5s;
   transition: all .5s;
+  -webkit-filter: contrast(120%) brightness(110%);
+          filter: contrast(120%) brightness(110%);
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
 }
 
 .btn-popup-text--smaller {
@@ -492,8 +496,8 @@ body::before {
   -webkit-box-shadow: 0vmin 0.1vmin 0.1vmin 0.1vmin rgba(44, 114, 235, 0.7);
           box-shadow: 0vmin 0.1vmin 0.1vmin 0.1vmin rgba(44, 114, 235, 0.7);
   z-index: 20;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all ease-in .2s;
+  transition: all ease-in .2s;
 }
 
 .btn::before {
@@ -535,7 +539,7 @@ body::before {
 .btn--decision::before {
   content: "";
   width: 15.4vmin;
-  height: 5.2vmin;
+  height: 5.4vmin;
   z-index: -10;
   position: Absolute;
   z-index: -1;
@@ -634,63 +638,191 @@ body::before {
   overflow: hidden;
   background: transparent;
   border: none;
-  -webkit-transition: all .5;
-  transition: all .5;
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
 }
 
 .btn-popup::before {
   content: '';
   position: Absolute;
-  top: 1%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .5;
-  -webkit-filter: contrast(150%) brightness(20%);
-          filter: contrast(150%) brightness(20%);
-  z-index: -1;
-  background: url("../img/mask.png") no-repeat center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4)), url(../img/mask.png) center center/cover;
+  opacity: .2;
+  background-blend-mode: multiply;
+  -webkit-filter: brightness(70%) contrast(200%);
+          filter: brightness(70%) contrast(200%);
   overflow: hidden;
+  z-index: -1;
+  -webkit-transition: all ease-in .2s;
+  transition: all ease-in .2s;
+}
+
+.btn-popup:hover {
+  cursor: pointer;
+}
+
+.btn-popup:hover .btn-popup-text {
+  color: rgba(255, 245, 245, 0.5);
+  text-shadow: rgba(0, 0, 0, 0.8) 0.2vmin 0.2vmin 0.5vmin;
 }
 
 .btn-popup--raid {
   color: rgba(212, 135, 109, 0.4);
-  border: rgba(212, 135, 109, 0.4) 0.2vmin solid;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  border: rgba(212, 135, 109, 0.4) 0.3vmin solid;
 }
 
-.btn-popup--raid:hover {
-  color: rgba(255, 255, 255, 0.5);
-  background: rgba(212, 135, 109, 0.5);
-  cursor: pointer;
-}
-
-.btn-popup--raid:hover > ::before {
-  -webkit-filter: contrast(150%) brightness(120%);
-          filter: contrast(150%) brightness(120%);
+.btn-popup--raid:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(212, 135, 109, 0.9))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(212, 135, 109, 0.9) rgba(212, 135, 109, 0.9)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .4;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .btn-popup--provocation {
   color: rgba(238, 216, 108, 0.4);
-  border: rgba(238, 216, 108, 0.4) 0.2vmin solid;
+  border: rgba(238, 216, 108, 0.4) 0.3vmin solid;
+}
+
+.btn-popup--provocation:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(238, 216, 108, 0.9))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(238, 216, 108, 0.9) rgba(238, 216, 108, 0.9)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .4;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .btn-popup--recon {
   color: rgba(127, 92, 167, 0.4);
-  border: rgba(127, 92, 167, 0.4) 0.2vmin solid;
-  -webkit-filter: brightness(150%);
-          filter: brightness(150%);
+  border: rgba(127, 92, 167, 0.4) 0.3vmin solid;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.btn-popup--recon:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(127, 92, 167, 0.9))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(127, 92, 167, 0.9) rgba(127, 92, 167, 0.9)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .4;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .btn-popup--wiretapping {
   color: rgba(1, 196, 219, 0.4);
-  border: rgba(1, 196, 219, 0.4) 0.2vmin solid;
+  border: rgba(1, 196, 219, 0.4) 0.3vmin solid;
+}
+
+.btn-popup--wiretapping:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 196, 219, 0.9))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(1, 196, 219, 0.9) rgba(1, 196, 219, 0.9)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .4;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .btn-popup--training {
   color: rgba(92, 104, 116, 0.9);
   border: rgba(108, 129, 144, 0.8) 0.3vmin solid;
+}
+
+.btn-popup--training:hover::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 129, 144, 0.9))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(108, 129, 144, 0.9) rgba(108, 129, 144, 0.9)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .4;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.btn-popup--learned {
+  color: rgba(255, 245, 245, 0.6);
+  border: rgba(9, 213, 255, 0.6) 0.2vmin solid;
+  -webkit-box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+          box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+}
+
+.btn-popup--learned::before {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  opacity: .5;
+}
+
+.btn-popup--learned:hover {
+  cursor: default;
+  color: rgba(255, 245, 245, 0.4);
+}
+
+.btn-popup-clicked {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  border: #09d5ff 0.3vmin solid;
+  -webkit-box-shadow: 0vmin 0vmin 0.7vmin 0.4vmin rgba(9, 213, 255, 0.7);
+          box-shadow: 0vmin 0vmin 0.7vmin 0.4vmin rgba(9, 213, 255, 0.7);
+  -webkit-transition: all ease-out .3s;
+  transition: all ease-out .3s;
+}
+
+.btn-popup-clicked .btn-popup-text {
+  color: rgba(255, 245, 245, 0.9);
+  text-shadow: rgba(0, 0, 0, 0.7) 0.3vmin 0.3vmin 0.3vmin;
+}
+
+.btn-popup-clicked:hover {
+  -webkit-filter: drop-shadow(0 0 1vmin rgba(9, 213, 255, 0.9));
+          filter: drop-shadow(0 0 1vmin rgba(9, 213, 255, 0.9));
+}
+
+.btn-popup-clicked--raid::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(212, 135, 109, 0.7))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(212, 135, 109, 0.7) rgba(212, 135, 109, 0.6)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .7;
+  -webkit-filter: brightness(110%) contrast(140%);
+          filter: brightness(110%) contrast(140%);
+}
+
+.btn-popup-clicked--provocation::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(238, 216, 108, 0.7))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(238, 216, 108, 0.7) rgba(238, 216, 108, 0.6)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .7;
+  -webkit-filter: brightness(110%) contrast(140%);
+          filter: brightness(110%) contrast(140%);
+}
+
+.btn-popup-clicked--recon::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(127, 92, 167, 0.7))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(127, 92, 167, 0.7) rgba(127, 92, 167, 0.6)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .7;
+  -webkit-filter: brightness(110%) contrast(140%);
+          filter: brightness(110%) contrast(140%);
+}
+
+.btn-popup-clicked--wiretapping::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(1, 196, 219, 0.7))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(1, 196, 219, 0.7) rgba(1, 196, 219, 0.6)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .7;
+  -webkit-filter: brightness(110%) contrast(140%);
+          filter: brightness(110%) contrast(140%);
+}
+
+.btn-popup-clicked--training::before {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 129, 144, 0.7))), url(../img/mask.png) center center/cover;
+  background: linear-gradient(to right, rgba(108, 129, 144, 0.7) rgba(108, 129, 144, 0.6)), url(../img/mask.png) center center/cover;
+  background-blend-mode: multiply;
+  opacity: .7;
+  -webkit-filter: brightness(110%) contrast(140%);
+          filter: brightness(110%) contrast(140%);
 }
 
 .btn-information, .btn-information:link, .btn-information:visited {
@@ -774,8 +906,8 @@ body::before {
 
 .footer__logo-box > img {
   width: 100%;
-  -webkit-filter: drop-shadow(0.1vmin 0.1vmin 0.1vmin rgba(255, 245, 245, 0.4)) brightness(100%) contrast(200%);
-          filter: drop-shadow(0.1vmin 0.1vmin 0.1vmin rgba(255, 245, 245, 0.4)) brightness(100%) contrast(200%);
+  -webkit-filter: brightness(110%) contrast(180%);
+          filter: brightness(110%) contrast(180%);
 }
 
 .footer__logogame-box {
@@ -787,8 +919,8 @@ body::before {
 
 .footer__logogame-box > img {
   width: 50%;
-  -webkit-filter: drop-shadow(0.1vmin 0.1vmin 0.1vmin rgba(255, 245, 245, 0.7)) brightness(100%) contrast(200%);
-          filter: drop-shadow(0.1vmin 0.1vmin 0.1vmin rgba(255, 245, 245, 0.7)) brightness(100%) contrast(200%);
+  -webkit-filter: brightness(110%) contrast(180%);
+          filter: brightness(110%) contrast(180%);
 }
 
 .main-grid {
@@ -1614,8 +1746,6 @@ body::before {
   background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 25% 1vmin, 1vmin 8vmin, 25% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
 }
 
 .action--recon::before {

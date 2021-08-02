@@ -27,7 +27,7 @@
 }
 @mixin action-default-color($default-color){
     color:rgba($default-color, .4);
-    border:rgba($default-color, .4) .2vmin solid;
+    border:rgba($default-color, .4) .3vmin solid;
 }
 @mixin action-default-hover($default-color){
    background:rgba($default-color, .6), url(../img/mask.png);
@@ -125,4 +125,16 @@ justify-content:center;
 @mixin background-blend($color-gradient,$mask){
     background:linear-gradient(to right,rgba($color-gradient,.9)rgba($color-gradient,.9)),url($mask)center center/cover;
     background-blend-mode: multiply;
+}
+@mixin background-blend-popup($color-gradient){
+    background:linear-gradient(to right,rgba($color-gradient,.9)rgba($color-gradient,.9)),url(../img/mask.png)center center/cover;
+    background-blend-mode:multiply;
+    opacity:.4;
+    filter:brightness(120%);
+}
+@mixin background-blend-clicked($color-gradient){
+    background:linear-gradient(to right,rgba($color-gradient,.7)rgba($color-gradient,.6)),url(../img/mask.png)center center/cover;
+    background-blend-mode:multiply;
+    opacity:.7;
+    filter:brightness(110%)contrast(140%);
 }

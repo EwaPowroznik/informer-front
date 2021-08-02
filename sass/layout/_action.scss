@@ -35,7 +35,7 @@
    }
    &--recon{
        @include action-border($color-recon,25%,0vmin);
-       filter:brightness(120%);
+        
        &::before{
         @include shadow-before(25%);
     }
