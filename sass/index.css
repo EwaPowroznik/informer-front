@@ -663,6 +663,8 @@ body::before {
 
 .btn-popup:hover {
   cursor: pointer;
+  -webkit-transform: translateY(-0.1vmin);
+          transform: translateY(-0.1vmin);
 }
 
 .btn-popup:hover .btn-popup-text {
@@ -823,6 +825,13 @@ body::before {
   opacity: .7;
   -webkit-filter: brightness(110%) contrast(140%);
           filter: brightness(110%) contrast(140%);
+}
+
+.btn-popup:focus {
+  -webkit-box-shadow: 0.2vmin 0.2vmin 0.5vmin 0.2vmin rgba(0, 0, 0, 0.5), 0vmin 0vmin 0.7vmin 0.4vmin rgba(9, 213, 255, 0.4);
+          box-shadow: 0.2vmin 0.2vmin 0.5vmin 0.2vmin rgba(0, 0, 0, 0.5), 0vmin 0vmin 0.7vmin 0.4vmin rgba(9, 213, 255, 0.4);
+  -webkit-transform: translateY(0.2vmin);
+          transform: translateY(0.2vmin);
 }
 
 .btn-information, .btn-information:link, .btn-information:visited {
@@ -1226,6 +1235,7 @@ body::before {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #fff5f5;
+  text-shadow: 0 0 0.6vmin rgba(0, 0, 0, 0.7);
 }
 
 .player-box__decision .decision-box__right--raid {
@@ -1356,6 +1366,7 @@ body::before {
   -webkit-filter: brightness(120%);
           filter: brightness(120%);
   background-blend-mode: multiply;
+  text-shadow: 0.1vmin 0.1vmin 0.9vmin rgba(9, 213, 255, 0.9);
 }
 
 .player-box__analysis .analysis-effect {

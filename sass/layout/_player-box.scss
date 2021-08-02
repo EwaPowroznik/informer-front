@@ -85,7 +85,8 @@
 
                &__right{
                 @include decision-box-properities;
-                   color:$color-text-white;
+                    color:$color-text-white;
+                   text-shadow: 0 0 .6vmin rgba($color-black, .7);
 
 
                    &--raid{
@@ -144,6 +145,7 @@
                 ,url(../img/mask__analysis.png)center center/cover;
                 filter:brightness(120%);
                 background-blend-mode:multiply;
+                text-shadow: .1vmin .1vmin .9vmin rgba($color-blue-glow, .9);
 
             
             }
