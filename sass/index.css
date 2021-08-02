@@ -1420,6 +1420,7 @@ body::before {
       -ms-flex-align: center;
           align-items: center;
   color: #fff5f5;
+  text-shadow: 0 0 0.6vmin rgba(0, 0, 0, 0.7);
 }
 
 .player-box__analysis .analysis-effect-top--raid {
