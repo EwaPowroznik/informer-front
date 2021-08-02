@@ -744,24 +744,6 @@ body::before {
           filter: brightness(120%);
 }
 
-.btn-popup--learned {
-  color: rgba(255, 245, 245, 0.6);
-  border: rgba(9, 213, 255, 0.6) 0.2vmin solid;
-  -webkit-box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
-          box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
-}
-
-.btn-popup--learned::before {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-  opacity: .5;
-}
-
-.btn-popup--learned:hover {
-  cursor: default;
-  color: rgba(255, 245, 245, 0.4);
-}
-
 .btn-popup-clicked {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
@@ -832,6 +814,43 @@ body::before {
           box-shadow: 0.2vmin 0.2vmin 0.5vmin 0.2vmin rgba(0, 0, 0, 0.5), 0vmin 0vmin 0.7vmin 0.4vmin rgba(9, 213, 255, 0.4);
   -webkit-transform: translateY(0.2vmin);
           transform: translateY(0.2vmin);
+}
+
+.btn-popup--learned {
+  color: rgba(255, 245, 245, 0.6);
+  border: rgba(9, 213, 255, 0.6) 0.2vmin solid;
+  -webkit-box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+          box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+}
+
+.btn-popup--learned::before {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  opacity: .5;
+}
+
+.btn-popup--learned:hover {
+  cursor: default;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.btn-popup--learned:hover .btn-popup-text {
+  color: rgba(255, 245, 245, 0.6);
+  text-shadow: none;
+}
+
+.btn-popup--learned:hover::before {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  opacity: .5;
+}
+
+.btn-popup--learned:focus {
+  -webkit-box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+          box-shadow: 0vmin 0vmin 0.8vmin 0.1vmin rgba(9, 213, 255, 0.4), inset 0vmin 0vmin 0.1vmin rgba(9, 213, 255, 0.6);
+  -webkit-transform: none;
+          transform: none;
 }
 
 .btn-information, .btn-information:link, .btn-information:visited {
