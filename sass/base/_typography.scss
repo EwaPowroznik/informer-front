@@ -65,7 +65,7 @@
             color:transparent;
             text-shadow: .1rem .1rem .8rem rgba($color-text-blue-light, .5); 
             font-size:90%;   
-            margin-left:52vmin; 
+            margin-left:30vmin; 
         }
 
         &--raid{
@@ -216,7 +216,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    display:inline-block;
+    display:inline;
     text-align:center;
     backface-visibility: hidden;
     filter:contrast(120%);

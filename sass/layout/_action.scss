@@ -1,5 +1,5 @@
 .action{
-//   border:1px solid blue;
+//  border:1px solid blue;
    margin: 3vmin 0;
 
    &--raid, 
@@ -7,7 +7,8 @@
    &--recon,
    &--wiretapping,
    &--training
-   {  position:relative;
+    {  
+        position:relative;
        &-header{
            position:absolute;
            left:50%;
@@ -75,6 +76,8 @@
          &--provocation,
          &--recon,
          &--wiretapping{
+             left:5%;
+             top:60%;
             left:50%;
             top:110%;
             transform: translate(-50%, -50%);
@@ -82,6 +85,8 @@
          }
 
        &--training{
+           top:18%;
+           left:5%;
            top:68%;
            left:50%;
             transform: translate(-50%, -52%);

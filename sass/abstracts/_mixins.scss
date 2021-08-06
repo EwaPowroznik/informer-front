@@ -107,6 +107,13 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin flex-colum-left{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 @mixin flex-space_between{
     display:flex;
        align-items:center;

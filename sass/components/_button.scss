@@ -43,7 +43,7 @@
         width:16vmin;
         height:6vmin;
         position:Absolute;
-       top:90%;
+       top:88%;
        left:50%;
        transform: translate(-50%,-50%);
         margin:0 auto;
@@ -172,6 +172,8 @@ text-align:center;
         &:hover{
             cursor:pointer;
             transform: translateY(-.1vmin);
+            backface-visibility: hidden;
+            // animation-fill-mode: backwards;
 
             & .btn-popup-text{
                 color:rgba($color-text-white,.5);
@@ -181,9 +183,9 @@ text-align:center;
 
             &--raid{
                 @include action-default-color($color-raid);
-
                 &:hover::before{
                     @include background-blend-popup($color-raid);
+
                 }
               
             }

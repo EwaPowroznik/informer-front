@@ -1,7 +1,8 @@
 .popup {
     width:100vw;
     height:105vmin;
-    background: rgba($color-black, 0.4);
+    background:url(../../img/fake-background.png)no-repeat center center/cover;
+    // background: rgba($color-black, 0.4);
     position: fixed;
     top: 48%;
     left: 50%;
@@ -9,9 +10,10 @@
     opacity: 1;
     visibility: visible;
     // display:none;
-    backdrop-filter: contrast(100%)blur(2vmin);
-    transition: all 0.3;
+    // backdrop-filter:blur(2vmin);
+    // transition: all 0.3;
     transform: translate(-50%, -50%);
+    background:blur(2vmin);
 
     &:target {
         opacity: 1;
@@ -20,6 +22,8 @@
         position: fixed;
         display: block;
     }
+
+   
     
 
 
@@ -30,10 +34,11 @@
         top:50%;
         left:50%;
         transform:translate(-50%, -50%);
-        background:url(../img/bg.png), ;
+        background:url(../img/bg.png) ;
         background-size: cover;
         border-radius: 1.2vmin;
         box-shadow: 1vmin 1.4vmin 2vmin.7vmin rgba($color-black,.7);
+        backdrop-filter: contrast(100%)blur(0vmin);
         
       
     }
@@ -42,5 +47,6 @@
         width:95%;
         height:72%;
         margin:0 auto;
+        backdrop-filter: contrast(100%)blur(0vmin);
     }
 }

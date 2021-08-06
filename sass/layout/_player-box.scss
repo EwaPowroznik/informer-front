@@ -9,8 +9,8 @@
             width:33%;
             height:auto;
             position:absolute;
-            top:-5%;
-            left:-5%;
+            top:-7%;
+            left:-7%;
          }
      }
 
@@ -157,6 +157,7 @@
             display:flex;
             justify-content:space-between;
             align-items: center;
+          
             
             &-left,
             &-right{
@@ -169,7 +170,7 @@
             &-top{
                 width:100%;
                 height:55%;
-                @include flex-column-center;
+                @include flex-column-left;
                 color:$color-text-white;
                 text-shadow: 0 0 .6vmin rgba($color-black, .7);
               
@@ -187,14 +188,18 @@
                 &--wiretapping{
                     @include background-blend($color-wiretapping,('../img/mask__analysis-effect.png') );
                 }
+                &--other{
+                    @include background-blend($color-analysis-lighter, ('../img/mask__analysis-effect.png') );
+                    // filter:brightness(100%);
+                }
             }
             &-bottom{
                 width:100%;
                 height:45%;
                 color:$color-black;
-                @include flex-column-center;
+                @include flex-column-left;
                
-                &--raid{
+                    &--raid{
                     background-color: $color-raid;
                    }
                    &--provocation{
@@ -205,6 +210,9 @@
                    }
                    &--wiretapping{
                     background-color: $color-wiretapping;
+                   }
+                   &--other{
+                    background-color: $color-analysis;
                    }
 
             }
@@ -243,6 +251,7 @@
         top:27%;
         left:5%;
         display:flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
