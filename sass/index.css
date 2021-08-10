@@ -548,7 +548,7 @@ body::before {
 }
 
 .btn--change {
-  width: 18vmin;
+  width: 20vmin;
   height: 4.4vmin;
   position: Absolute;
   top: 91%;
@@ -561,7 +561,7 @@ body::before {
 
 .btn--change::before {
   content: "";
-  width: 17.4vmin;
+  width: 19.4vmin;
   height: 3.6vmin;
   z-index: -10;
   position: Absolute;
