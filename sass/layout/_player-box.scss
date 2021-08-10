@@ -329,10 +329,6 @@
             outline:none;
             filter:brightness(90%);
             text-shadow: 0rem 0rem .4rem $color-text-white;
-
-            // &::placeholder{
-                // opacity:0;
-            // }
         }
     
     }
@@ -348,6 +344,7 @@
     &:hover &-icon,
     &:focus &-icon{
         opacity:1;
+        cursor: pointer;
     }
 
 

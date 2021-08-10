@@ -77,6 +77,18 @@
                 content:'nalot';
                 @include text-background-before;
             }
+
+            &-eng{
+                @include text-background ($color-raid,$color-raid-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                &::before{
+                    content:'Raid';
+                    @include text-background-before;
+                }
+
+            }
         }
         &--provocation{
             @include text-background ($color-provocation,$color-provocation-lighter);
@@ -87,6 +99,17 @@
             &::before{
                 content:'prowokacja';
                 @include text-background-before;
+            }
+            &-eng{
+                @include text-background ($color-provocation,$color-provocation-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            &::before{
+                content:'provocation';
+                @include text-background-before;
+            }
             }
         }
         &--recon{
@@ -99,6 +122,18 @@
                 content:'rekonesans';
                 @include text-background-before;
             }
+            &-eng{
+                @include text-background ($color-recon,$color-recon-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'recon';
+                    @include text-background-before;
+                }
+
+            }
         }
         &--wiretapping{
             @include text-background ($color-wiretapping,$color-wiretapping-lighter);
@@ -110,6 +145,18 @@
                 content:'podsłuch';
                 @include text-background-before;
             }
+            &-eng{
+                @include text-background ($color-wiretapping,$color-wiretapping-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'wiretapping';
+                    @include text-background-before;
+                }
+
+            }
         }
         &--training{
             @include text-background ($color-training,$color-training-lighter);
@@ -120,6 +167,17 @@
             &::before{
                 content:'trening';
                 @include text-background-before;
+            }
+            &-eng{
+                @include text-background ($color-training,$color-training-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'training';
+                    @include text-background-before;
+                }  
             }
         }
 
@@ -137,7 +195,7 @@
             }
             &::after{
                 content:"";
-                width: 3vmin;
+                width: 5vmin;
                 height:.15vmin;
                 border-radius:5px;
                 position:absolute;
@@ -145,7 +203,32 @@
                 box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
                 top:45%;
                 right:0; 
-                transform:translatex(110%); 
+                transform:translatex(115%); 
+            }
+            &-eng{
+                @include text-background ($color-rest,$color-rest-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            display:inline-block;
+            max-width:50%;
+            &::before{
+                content:'Rest';
+                @include text-background-before;
+            }
+            &::after{
+                content:"";
+                width: 21vmin;
+                height:.15vmin;
+                border-radius:5px;
+                position:absolute;
+                background:$color-raid;
+                box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
+                top:45%;
+                right:0; 
+                transform:translatex(105%); 
+            }
 
             }
         }
@@ -163,15 +246,41 @@
             }
             &::after{
                 content:"";
-                width: 3vmin;
-                height:.1vmin;
+                width: 5vmin;
+                height:.2vmin;
                 border-radius:5px;
                 position:absolute;
                 background:$color-raid;
                 box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
                 top:45%;
                 right:0; 
-                transform:translatex(110%); 
+                transform:translatex(115%); 
+
+            }
+            &-eng{
+                @include text-background ($color-observation,$color-observation-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                 max-width:50%;
+                &::before{
+                    content:'Observation';
+                    @include text-background-before;
+                }
+                &::after{
+                    content:"";
+                    width: 3.8vmin;
+                    height:.2vmin;
+                    border-radius:5px;
+                    position:absolute;
+                    background:$color-raid;
+                    box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
+                    top:45%;
+                    right:0; 
+                    transform:translatex(112%); 
+    
+                }
 
             }
         }
@@ -188,6 +297,30 @@
             }
             &::after{
                 content:"";
+                width: 13vmin;
+                height:.2vmin;
+                border-radius:5px;
+                position:absolute;
+                background:$color-raid;
+                box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
+                top:45%;
+                right:0; 
+                transform:translatex(110%); 
+            }  
+
+            &-eng{
+                @include text-background ($color-analysis,$color-analysis-lighter);
+            background-clip:text;
+            -webkit-background-clip: text;
+            color:transparent;
+            position:relative;
+            max-width:50%;
+            &::before{
+                content:'Analysis';
+                @include text-background-before;
+            }
+            &::after{
+                content:"";
                 width: 11vmin;
                 height:.2vmin;
                 border-radius:5px;
@@ -196,8 +329,9 @@
                 box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
                 top:45%;
                 right:0; 
-                transform:translatex(105%); 
+                transform:translatex(110%); 
             }  
+            }
         }
 }
         
@@ -267,12 +401,12 @@
     font-size:2vmin;
     text-transform: uppercase;
     font-weight: 400;
-    padding-left:1vmin;
+    padding:1vmin;
    
 
 }
 .dice__text{
-    font-size:2vmin;
+    font-size:1.9vmin;
     text-transform: uppercase;
     font-weight: 400;
     color:$color-text-white;
@@ -318,6 +452,7 @@
     letter-spacing: .1vmin;
     display:inline-block;
     margin-bottom:1vmin;
+   
 
     &--float{
         width:50%;

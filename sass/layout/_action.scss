@@ -6,7 +6,13 @@
    &--provocation,
    &--recon,
    &--wiretapping,
-   &--training
+   &--training,
+   &--raid-eng,
+   &--provocation-eng,
+   &--recon-eng,
+   &--wiretapping-eng,
+   &--training-eng
+
     {  
         position:relative;
        &-header{
@@ -24,7 +30,19 @@
        &::after{
            @include shadow-after(38%);
        }
+
+       &-eng{
+        @include action-border($color-raid,40%,0vmin);
+        &::before{
+            @include shadow-before(40%);
+        }
+        &::after{
+            @include shadow-after(40%);
+        }
+
+       }
    }
+
    &--provocation{
        @include action-border($color-provocation,25%,0vmin);
        &::before{
@@ -33,6 +51,16 @@
     &::after{
         @include shadow-after(26%);
     }
+        &-eng{
+            @include action-border($color-provocation,26%,0vmin);
+            &::before{
+            @include shadow-before(27%);
+        }
+        &::after{
+            @include shadow-after(27%);
+        }
+
+       }
    }
    &--recon{
        @include action-border($color-recon,25%,0vmin);
@@ -43,6 +71,17 @@
     &::after{
         @include shadow-after(25%);
     }
+
+    &-eng{
+        @include action-border($color-recon,38%,0vmin);
+        &::before{
+        @include shadow-before(38%);
+    }
+    &::after{
+        @include shadow-after(38%);
+    }
+
+   }
    }
    &--wiretapping{
        @include action-border($color-wiretapping,30%,0vmin);
@@ -52,6 +91,16 @@
     &::after{
         @include shadow-after(29%);
     }
+    &-eng{
+        @include action-border($color-wiretapping,26%,0vmin);
+        &::before{
+        @include shadow-before(27%);
+    }
+    &::after{
+        @include shadow-after(27%);
+    }
+
+   }
    }
    &--training{
        @include action-border($color-training,33%,14.55vmin);
@@ -63,7 +112,21 @@
         @include shadow-after(34%);
         z-index:-1;
     }
+
+        &-eng{
+            @include action-border($color-training,33%,14.55vmin);
+            &::before{
+             @include shadow-before(34%);
+             z-index:-1;
+         }
+         &::after{
+             @include shadow-after(34%);
+             z-index:-1;
+         }
+
+        }
    }
+   
 
       
    &__button-box{
@@ -106,7 +169,7 @@
         display:inline;
         position:absolute;
         top:0;
-        left:50%;
+        left:55%;
 
         &--group{
             display:inline;

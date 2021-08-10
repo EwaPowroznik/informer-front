@@ -28,11 +28,20 @@ position:relative;
 
 }
 
-.action--raid{grid-area: raid;}
-.action--provocation{grid-area: provocation;}
-.action--recon{grid-area: recon;}
-.action--wiretapping{grid-area: wiretapping;}
-.action--training{grid-area: training;}
+.action--raid,
+.action--raid-eng
+{grid-area: raid;}
+.action--provocation,
+.action--provocation-eng
+{grid-area: provocation;}
+.action--recon,
+.action--recon-eng
+{grid-area: recon;}
+.action--wiretapping,
+.action--wiretapping-eng{grid-area: wiretapping;}
+.action--training,
+.action--training-eng
+{grid-area: training;}
 .action--other{grid-area: other;}
 
 .popup-grid{

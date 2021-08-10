@@ -155,6 +155,24 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
+.heading-primary--raid-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#d4876d), color-stop(40%, #d4876d), color-stop(40%, #eea087), color-stop(60%, #eea087), color-stop(60%, #d4876d), to(#d4876d));
+  background-image: linear-gradient(to top, #d4876d 0%, #d4876d 40%, #eea087 40%, #eea087 60%, #d4876d 60%, #d4876d 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-primary--raid-eng::before {
+  content: 'Raid';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
 .heading-primary--provocation {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eed86c), color-stop(40%, #eed86c), color-stop(40%, #fbff8f), color-stop(60%, #fbff8f), color-stop(60%, #eed86c), to(#eed86c));
   background-image: linear-gradient(to top, #eed86c 0%, #eed86c 40%, #fbff8f 40%, #fbff8f 60%, #eed86c 60%, #eed86c 100%);
@@ -166,6 +184,25 @@ body::before {
 
 .heading-primary--provocation::before {
   content: 'prowokacja';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-primary--provocation-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#eed86c), color-stop(40%, #eed86c), color-stop(40%, #fbff8f), color-stop(60%, #fbff8f), color-stop(60%, #eed86c), to(#eed86c));
+  background-image: linear-gradient(to top, #eed86c 0%, #eed86c 40%, #fbff8f 40%, #fbff8f 60%, #eed86c 60%, #eed86c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.heading-primary--provocation-eng::before {
+  content: 'provocation';
   position: absolute;
   top: 0;
   right: 0;
@@ -193,6 +230,25 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
+.heading-primary--recon-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#7f5ca7), color-stop(40%, #7f5ca7), color-stop(40%, #b58dd8), color-stop(60%, #b58dd8), color-stop(60%, #7f5ca7), to(#7f5ca7));
+  background-image: linear-gradient(to top, #7f5ca7 0%, #7f5ca7 40%, #b58dd8 40%, #b58dd8 60%, #7f5ca7 60%, #7f5ca7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.heading-primary--recon-eng::before {
+  content: 'recon';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
 .heading-primary--wiretapping {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#01c4db), color-stop(40%, #01c4db), color-stop(40%, #01eaf5), color-stop(60%, #01eaf5), color-stop(60%, #01c4db), to(#01c4db));
   background-image: linear-gradient(to top, #01c4db 0%, #01c4db 40%, #01eaf5 40%, #01eaf5 60%, #01c4db 60%, #01c4db 100%);
@@ -212,6 +268,25 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
+.heading-primary--wiretapping-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#01c4db), color-stop(40%, #01c4db), color-stop(40%, #01eaf5), color-stop(60%, #01eaf5), color-stop(60%, #01c4db), to(#01c4db));
+  background-image: linear-gradient(to top, #01c4db 0%, #01c4db 40%, #01eaf5 40%, #01eaf5 60%, #01c4db 60%, #01c4db 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.heading-primary--wiretapping-eng::before {
+  content: 'wiretapping';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
 .heading-primary--training {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#6c8190), color-stop(40%, #6c8190), color-stop(40%, #a3bac8), color-stop(60%, #a3bac8), color-stop(60%, #6c8190), to(#6c8190));
   background-image: linear-gradient(to top, #6c8190 0%, #6c8190 40%, #a3bac8 40%, #a3bac8 60%, #6c8190 60%, #6c8190 100%);
@@ -223,6 +298,25 @@ body::before {
 
 .heading-primary--training::before {
   content: 'trening';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-primary--training-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#6c8190), color-stop(40%, #6c8190), color-stop(40%, #a3bac8), color-stop(60%, #a3bac8), color-stop(60%, #6c8190), to(#6c8190));
+  background-image: linear-gradient(to top, #6c8190 0%, #6c8190 40%, #a3bac8 40%, #a3bac8 60%, #6c8190 60%, #6c8190 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.heading-primary--training-eng::before {
+  content: 'training';
   position: absolute;
   top: 0;
   right: 0;
@@ -254,7 +348,7 @@ body::before {
 
 .heading-primary--rest::after {
   content: "";
-  width: 3vmin;
+  width: 5vmin;
   height: .15vmin;
   border-radius: 5px;
   position: absolute;
@@ -263,8 +357,44 @@ body::before {
           box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
   top: 45%;
   right: 0;
-  -webkit-transform: translatex(110%);
-          transform: translatex(110%);
+  -webkit-transform: translatex(115%);
+          transform: translatex(115%);
+}
+
+.heading-primary--rest-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#71c299), color-stop(40%, #71c299), color-stop(40%, #a7e9cd), color-stop(60%, #a7e9cd), color-stop(60%, #71c299), to(#71c299));
+  background-image: linear-gradient(to top, #71c299 0%, #71c299 40%, #a7e9cd 40%, #a7e9cd 60%, #71c299 60%, #71c299 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+}
+
+.heading-primary--rest-eng::before {
+  content: 'Rest';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-primary--rest-eng::after {
+  content: "";
+  width: 21vmin;
+  height: .15vmin;
+  border-radius: 5px;
+  position: absolute;
+  background: #d4876d;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+  top: 45%;
+  right: 0;
+  -webkit-transform: translatex(105%);
+          transform: translatex(105%);
 }
 
 .heading-primary--observation {
@@ -289,8 +419,8 @@ body::before {
 
 .heading-primary--observation::after {
   content: "";
-  width: 3vmin;
-  height: .1vmin;
+  width: 5vmin;
+  height: .2vmin;
   border-radius: 5px;
   position: absolute;
   background: #d4876d;
@@ -298,8 +428,43 @@ body::before {
           box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
   top: 45%;
   right: 0;
-  -webkit-transform: translatex(110%);
-          transform: translatex(110%);
+  -webkit-transform: translatex(115%);
+          transform: translatex(115%);
+}
+
+.heading-primary--observation-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f2f2f2), color-stop(40%, #f2f2f2), color-stop(40%, #b7b2b2), color-stop(60%, #b7b2b2), color-stop(60%, #f2f2f2), to(#f2f2f2));
+  background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 40%, #b7b2b2 40%, #b7b2b2 60%, #f2f2f2 60%, #f2f2f2 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  max-width: 50%;
+}
+
+.heading-primary--observation-eng::before {
+  content: 'Observation';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-primary--observation-eng::after {
+  content: "";
+  width: 3.8vmin;
+  height: .2vmin;
+  border-radius: 5px;
+  position: absolute;
+  background: #d4876d;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+  top: 45%;
+  right: 0;
+  -webkit-transform: translatex(112%);
+          transform: translatex(112%);
 }
 
 .heading-primary--analysis {
@@ -324,6 +489,41 @@ body::before {
 
 .heading-primary--analysis::after {
   content: "";
+  width: 13vmin;
+  height: .2vmin;
+  border-radius: 5px;
+  position: absolute;
+  background: #d4876d;
+  -webkit-box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+          box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
+  top: 45%;
+  right: 0;
+  -webkit-transform: translatex(110%);
+          transform: translatex(110%);
+}
+
+.heading-primary--analysis-eng {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b7b4ae), color-stop(40%, #b7b4ae), color-stop(40%, #e3e1dd), color-stop(60%, #e3e1dd), color-stop(60%, #b7b4ae), to(#b7b4ae));
+  background-image: linear-gradient(to top, #b7b4ae 0%, #b7b4ae 40%, #e3e1dd 40%, #e3e1dd 60%, #b7b4ae 60%, #b7b4ae 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  max-width: 50%;
+}
+
+.heading-primary--analysis-eng::before {
+  content: 'Analysis';
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.heading-primary--analysis-eng::after {
+  content: "";
   width: 11vmin;
   height: .2vmin;
   border-radius: 5px;
@@ -333,8 +533,8 @@ body::before {
           box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.7);
   top: 45%;
   right: 0;
-  -webkit-transform: translatex(105%);
-          transform: translatex(105%);
+  -webkit-transform: translatex(110%);
+          transform: translatex(110%);
 }
 
 .heading-secondary {
@@ -410,11 +610,11 @@ body::before {
   font-size: 2vmin;
   text-transform: uppercase;
   font-weight: 400;
-  padding-left: 1vmin;
+  padding: 1vmin;
 }
 
 .dice__text {
-  font-size: 2vmin;
+  font-size: 1.9vmin;
   text-transform: uppercase;
   font-weight: 400;
   color: #fff5f5;
@@ -551,7 +751,7 @@ body::before {
   width: 20vmin;
   height: 4.4vmin;
   position: Absolute;
-  top: 91%;
+  top: 92%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -561,27 +761,27 @@ body::before {
 
 .btn--change::before {
   content: "";
-  width: 19.4vmin;
+  width: 19.2vmin;
   height: 3.6vmin;
   z-index: -10;
   position: Absolute;
   z-index: -1;
   top: -4%;
-  left: -1%;
+  left: -.5%;
 }
 
 .btn--accept {
   width: 16vmin;
   height: 4vmin;
   position: Absolute;
-  top: 82%;
+  top: 79%;
   left: 46%;
 }
 
 .btn--accept::before {
   content: "";
-  width: 15.3vmin;
-  height: 3.3vmin;
+  width: 15.4vmin;
+  height: 3.1vmin;
   z-index: -2;
   position: Absolute;
   top: -3%;
@@ -991,31 +1191,36 @@ body::before {
       grid-template-rows: repeat(2, 1fr);
 }
 
-.action--raid {
+.action--raid,
+.action--raid-eng {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: raid;
 }
 
-.action--provocation {
+.action--provocation,
+.action--provocation-eng {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: provocation;
 }
 
-.action--recon {
+.action--recon,
+.action--recon-eng {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: recon;
 }
 
-.action--wiretapping {
+.action--wiretapping,
+.action--wiretapping-eng {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: wiretapping;
 }
 
-.action--training {
+.action--training,
+.action--training-eng {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -1709,17 +1914,18 @@ body::before {
 .form__name:hover .form__name-icon,
 .form__name:focus .form__name-icon {
   opacity: 1;
+  cursor: pointer;
 }
 
 .action {
   margin: 3vmin 0;
 }
 
-.action--raid, .action--provocation, .action--recon, .action--wiretapping, .action--training {
+.action--raid, .action--provocation, .action--recon, .action--wiretapping, .action--training, .action--raid-eng, .action--provocation-eng, .action--recon-eng, .action--wiretapping-eng, .action--training-eng {
   position: relative;
 }
 
-.action--raid-header, .action--provocation-header, .action--recon-header, .action--wiretapping-header, .action--training-header {
+.action--raid-header, .action--provocation-header, .action--recon-header, .action--wiretapping-header, .action--training-header, .action--raid-eng-header, .action--provocation-eng-header, .action--recon-eng-header, .action--wiretapping-eng-header, .action--training-eng-header {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1757,6 +1963,37 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--raid-eng {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 40% 1vmin, 1vmin 8vmin, 40% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--raid-eng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--raid-eng::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
 .action--provocation {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -1782,6 +2019,37 @@ body::before {
   top: 0;
   right: 0;
   width: 26%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--provocation-eng {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 26% 1vmin, 1vmin 8vmin, 26% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--provocation-eng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--provocation-eng::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27%;
   height: 100%;
   z-index: -1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
@@ -1819,6 +2087,37 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--recon-eng {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 38% 1vmin, 1vmin 8vmin, 38% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--recon-eng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--recon-eng::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
 .action--wiretapping {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -1850,6 +2149,37 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--wiretapping-eng {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 26% 1vmin, 1vmin 8vmin, 26% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--wiretapping-eng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--wiretapping-eng::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
 .action--training {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -1871,6 +2201,39 @@ body::before {
 }
 
 .action--training::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+  z-index: -1;
+}
+
+.action--training-eng {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 33% 1vmin, 1vmin 8vmin, 33% 1vmin, 1vmin 14.55vmin, 2vmin 0.2vmin, 0.2vmin 14.55vmin, 2vmin 0.2vmin;
+}
+
+.action--training-eng::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
+  z-index: -1;
+}
+
+.action--training-eng::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1937,7 +2300,7 @@ body::before {
   display: inline;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 55%;
 }
 
 .action__form--group {
@@ -2011,8 +2374,8 @@ body::before {
 }
 
 .popup__content {
-  width: 64vw;
-  height: 80vmin;
+  width: 70vw;
+  height: 78vmin;
   position: Absolute;
   top: 50%;
   left: 50%;
@@ -2055,9 +2418,9 @@ body::before {
 
 .popup__content .information-content {
   width: 78%;
-  height: 80%;
+  height: 85%;
   position: Absolute;
-  top: 15%;
+  top: 12%;
   left: 5%;
   padding: .5vmin;
   font-family: 'Capsuula';
@@ -2079,5 +2442,6 @@ body::before {
 .popup__content .information__players-list {
   width: 100%;
   height: auto;
+  margin: 1vmin auto;
 }
 /*# sourceMappingURL=index.css.map */

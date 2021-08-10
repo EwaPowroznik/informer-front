@@ -64,7 +64,7 @@
         width:20vmin;
         height:4.4vmin;
         position:Absolute;
-       top:91%;
+       top:92%;
        left:50%;
        transform: translate(-50%,-50%);
         margin:0 auto;
@@ -72,13 +72,13 @@
 
         &::before{
             content:"";
-            width:19.4vmin;
+            width:19.2vmin;
             height:3.6vmin;
             z-index: -10;
             position:Absolute;
             z-index:-1;
             top:-4%;
-            left:-1%; 
+            left:-.5%; 
             }
         } 
     
@@ -87,13 +87,13 @@
         width:16vmin;
         height:4vmin;
         position:Absolute;
-        top:82%;
+        top:79%;
         left:46%;
 
         &::before{
             content:"";
-            width:15.3vmin;
-            height:3.3vmin;
+            width:15.4vmin;
+            height:3.1vmin;
             z-index: -2;
             position:Absolute;
             top:-3%;
