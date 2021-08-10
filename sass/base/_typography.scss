@@ -69,6 +69,7 @@
         }
 
         &--raid{
+            &-pl{
             @include text-background ($color-raid,$color-raid-lighter);
             background-clip:text;
             -webkit-background-clip: text;
@@ -76,6 +77,7 @@
             &::before{
                 content:'nalot';
                 @include text-background-before;
+            }
             }
 
             &-eng{
@@ -91,15 +93,19 @@
             }
         }
         &--provocation{
-            @include text-background ($color-provocation,$color-provocation-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-            &::before{
-                content:'prowokacja';
-                @include text-background-before;
+            &-pl{
+                @include text-background ($color-provocation,$color-provocation-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'prowokacja';
+                    @include text-background-before;
+                }
+
             }
+           
             &-eng{
                 @include text-background ($color-provocation,$color-provocation-lighter);
             background-clip:text;
@@ -113,15 +119,18 @@
             }
         }
         &--recon{
-            @include text-background ($color-recon,$color-recon-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-            &::before{
-                content:'rekonesans';
-                @include text-background-before;
+            &-pl{
+                @include text-background ($color-recon,$color-recon-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'rekonesans';
+                    @include text-background-before;
+                }
             }
+           
             &-eng{
                 @include text-background ($color-recon,$color-recon-lighter);
                 background-clip:text;
@@ -136,15 +145,18 @@
             }
         }
         &--wiretapping{
-            @include text-background ($color-wiretapping,$color-wiretapping-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-            &::before{
-                content:'podsłuch';
-                @include text-background-before;
+            &-pl{
+                @include text-background ($color-wiretapping,$color-wiretapping-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'podsłuch';
+                    @include text-background-before;
+                }
             }
+          
             &-eng{
                 @include text-background ($color-wiretapping,$color-wiretapping-lighter);
                 background-clip:text;
@@ -159,15 +171,18 @@
             }
         }
         &--training{
-            @include text-background ($color-training,$color-training-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-            &::before{
-                content:'trening';
-                @include text-background-before;
+            &-pl{
+                @include text-background ($color-training,$color-training-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                &::before{
+                    content:'trening';
+                    @include text-background-before;
+                }
             }
+         
             &-eng{
                 @include text-background ($color-training,$color-training-lighter);
                 background-clip:text;
@@ -182,7 +197,8 @@
         }
 
         &--rest{
-            @include text-background ($color-rest,$color-rest-lighter);
+            &-pl{
+                @include text-background ($color-rest,$color-rest-lighter);
             background-clip:text;
             -webkit-background-clip: text;
             color:transparent;
@@ -205,6 +221,8 @@
                 right:0; 
                 transform:translatex(115%); 
             }
+            }
+            
             &-eng{
                 @include text-background ($color-rest,$color-rest-lighter);
             background-clip:text;
@@ -234,29 +252,32 @@
         }
 
         &--observation{
-            @include text-background ($color-observation,$color-observation-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-             max-width:50%;
-            &::before{
-                content:'Obserwacja';
-                @include text-background-before;
+            &-pl{
+                @include text-background ($color-observation,$color-observation-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                 max-width:50%;
+                &::before{
+                    content:'Obserwacja';
+                    @include text-background-before;
+                }
+                &::after{
+                    content:"";
+                    width: 5vmin;
+                    height:.2vmin;
+                    border-radius:5px;
+                    position:absolute;
+                    background:$color-raid;
+                    box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
+                    top:45%;
+                    right:0; 
+                    transform:translatex(115%); 
+    
+                }
             }
-            &::after{
-                content:"";
-                width: 5vmin;
-                height:.2vmin;
-                border-radius:5px;
-                position:absolute;
-                background:$color-raid;
-                box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
-                top:45%;
-                right:0; 
-                transform:translatex(115%); 
-
-            }
+           
             &-eng{
                 @include text-background ($color-observation,$color-observation-lighter);
                 background-clip:text;
@@ -285,28 +306,29 @@
             }
         }
         &--analysis{
-            @include text-background ($color-analysis,$color-analysis-lighter);
-            background-clip:text;
-            -webkit-background-clip: text;
-            color:transparent;
-            position:relative;
-            max-width:50%;
-            &::before{
-                content:'Analiza';
-                @include text-background-before;
-            }
-            &::after{
-                content:"";
-                width: 13vmin;
-                height:.2vmin;
-                border-radius:5px;
-                position:absolute;
-                background:$color-raid;
-                box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
-                top:45%;
-                right:0; 
-                transform:translatex(110%); 
-            }  
+            &-pl{@include text-background ($color-analysis,$color-analysis-lighter);
+                background-clip:text;
+                -webkit-background-clip: text;
+                color:transparent;
+                position:relative;
+                max-width:50%;
+                &::before{
+                    content:'Analiza';
+                    @include text-background-before;
+                }
+                &::after{
+                    content:"";
+                    width: 13vmin;
+                    height:.2vmin;
+                    border-radius:5px;
+                    position:absolute;
+                    background:$color-raid;
+                    box-shadow: 0rem 0rem 1rem rgba($color-black, .7);
+                    top:45%;
+                    right:0; 
+                    transform:translatex(110%); 
+                }  }
+            
 
             &-eng{
                 @include text-background ($color-analysis,$color-analysis-lighter);

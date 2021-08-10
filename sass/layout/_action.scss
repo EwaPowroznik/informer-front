@@ -2,11 +2,16 @@
 //  border:1px solid blue;
    margin: 3vmin 0;
 
-   &--raid, 
+   &--raid,
    &--provocation,
    &--recon,
    &--wiretapping,
    &--training,
+   &--raid-pl, 
+   &--provocation-pl,
+   &--recon-pl,
+   &--wiretapping-pl,
+   &--training-pl,
    &--raid-eng,
    &--provocation-eng,
    &--recon-eng,
@@ -23,6 +28,7 @@
     
    }
    &--raid{
+     &-pl{      
        @include action-border($color-raid,36%,0vmin);
        &::before{
            @include shadow-before(38%);
@@ -30,6 +36,7 @@
        &::after{
            @include shadow-after(38%);
        }
+    } 
 
        &-eng{
         @include action-border($color-raid,40%,0vmin);
@@ -44,6 +51,8 @@
    }
 
    &--provocation{
+
+    &-pl{
        @include action-border($color-provocation,25%,0vmin);
        &::before{
         @include shadow-before(26%);
@@ -51,6 +60,7 @@
     &::after{
         @include shadow-after(26%);
     }
+        }
         &-eng{
             @include action-border($color-provocation,26%,0vmin);
             &::before{
@@ -63,6 +73,8 @@
        }
    }
    &--recon{
+
+    &-pl{
        @include action-border($color-recon,25%,0vmin);
         
        &::before{
@@ -70,6 +82,7 @@
     }
     &::after{
         @include shadow-after(25%);
+    }
     }
 
     &-eng{
@@ -84,12 +97,15 @@
    }
    }
    &--wiretapping{
+
+    &-pl{
        @include action-border($color-wiretapping,30%,0vmin);
        &::before{
         @include shadow-before(29%);
     }
     &::after{
         @include shadow-after(29%);
+    }
     }
     &-eng{
         @include action-border($color-wiretapping,26%,0vmin);
@@ -103,6 +119,8 @@
    }
    }
    &--training{
+
+    &-pl{
        @include action-border($color-training,33%,14.55vmin);
        &::before{
         @include shadow-before(34%);
@@ -111,6 +129,7 @@
     &::after{
         @include shadow-after(34%);
         z-index:-1;
+    }
     }
 
         &-eng{

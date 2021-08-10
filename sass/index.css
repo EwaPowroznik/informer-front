@@ -137,7 +137,7 @@ body::before {
   margin-left: 30vmin;
 }
 
-.heading-primary--raid {
+.heading-primary--raid-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#d4876d), color-stop(40%, #d4876d), color-stop(40%, #eea087), color-stop(60%, #eea087), color-stop(60%, #d4876d), to(#d4876d));
   background-image: linear-gradient(to top, #d4876d 0%, #d4876d 40%, #eea087 40%, #eea087 60%, #d4876d 60%, #d4876d 100%);
   background-clip: text;
@@ -145,7 +145,7 @@ body::before {
   color: transparent;
 }
 
-.heading-primary--raid::before {
+.heading-primary--raid-pl::before {
   content: 'nalot';
   position: absolute;
   top: 0;
@@ -173,7 +173,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--provocation {
+.heading-primary--provocation-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eed86c), color-stop(40%, #eed86c), color-stop(40%, #fbff8f), color-stop(60%, #fbff8f), color-stop(60%, #eed86c), to(#eed86c));
   background-image: linear-gradient(to top, #eed86c 0%, #eed86c 40%, #fbff8f 40%, #fbff8f 60%, #eed86c 60%, #eed86c 100%);
   background-clip: text;
@@ -182,7 +182,7 @@ body::before {
   position: relative;
 }
 
-.heading-primary--provocation::before {
+.heading-primary--provocation-pl::before {
   content: 'prowokacja';
   position: absolute;
   top: 0;
@@ -211,7 +211,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--recon {
+.heading-primary--recon-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#7f5ca7), color-stop(40%, #7f5ca7), color-stop(40%, #b58dd8), color-stop(60%, #b58dd8), color-stop(60%, #7f5ca7), to(#7f5ca7));
   background-image: linear-gradient(to top, #7f5ca7 0%, #7f5ca7 40%, #b58dd8 40%, #b58dd8 60%, #7f5ca7 60%, #7f5ca7 100%);
   background-clip: text;
@@ -220,7 +220,7 @@ body::before {
   position: relative;
 }
 
-.heading-primary--recon::before {
+.heading-primary--recon-pl::before {
   content: 'rekonesans';
   position: absolute;
   top: 0;
@@ -249,7 +249,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--wiretapping {
+.heading-primary--wiretapping-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#01c4db), color-stop(40%, #01c4db), color-stop(40%, #01eaf5), color-stop(60%, #01eaf5), color-stop(60%, #01c4db), to(#01c4db));
   background-image: linear-gradient(to top, #01c4db 0%, #01c4db 40%, #01eaf5 40%, #01eaf5 60%, #01c4db 60%, #01c4db 100%);
   background-clip: text;
@@ -258,7 +258,7 @@ body::before {
   position: relative;
 }
 
-.heading-primary--wiretapping::before {
+.heading-primary--wiretapping-pl::before {
   content: 'podsłuch';
   position: absolute;
   top: 0;
@@ -287,7 +287,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--training {
+.heading-primary--training-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#6c8190), color-stop(40%, #6c8190), color-stop(40%, #a3bac8), color-stop(60%, #a3bac8), color-stop(60%, #6c8190), to(#6c8190));
   background-image: linear-gradient(to top, #6c8190 0%, #6c8190 40%, #a3bac8 40%, #a3bac8 60%, #6c8190 60%, #6c8190 100%);
   background-clip: text;
@@ -296,7 +296,7 @@ body::before {
   position: relative;
 }
 
-.heading-primary--training::before {
+.heading-primary--training-pl::before {
   content: 'trening';
   position: absolute;
   top: 0;
@@ -325,7 +325,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--rest {
+.heading-primary--rest-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#71c299), color-stop(40%, #71c299), color-stop(40%, #a7e9cd), color-stop(60%, #a7e9cd), color-stop(60%, #71c299), to(#71c299));
   background-image: linear-gradient(to top, #71c299 0%, #71c299 40%, #a7e9cd 40%, #a7e9cd 60%, #71c299 60%, #71c299 100%);
   background-clip: text;
@@ -336,7 +336,7 @@ body::before {
   max-width: 50%;
 }
 
-.heading-primary--rest::before {
+.heading-primary--rest-pl::before {
   content: 'Odpoczynek';
   position: absolute;
   top: 0;
@@ -346,7 +346,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--rest::after {
+.heading-primary--rest-pl::after {
   content: "";
   width: 5vmin;
   height: .15vmin;
@@ -397,7 +397,7 @@ body::before {
           transform: translatex(105%);
 }
 
-.heading-primary--observation {
+.heading-primary--observation-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f2f2f2), color-stop(40%, #f2f2f2), color-stop(40%, #b7b2b2), color-stop(60%, #b7b2b2), color-stop(60%, #f2f2f2), to(#f2f2f2));
   background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 40%, #b7b2b2 40%, #b7b2b2 60%, #f2f2f2 60%, #f2f2f2 100%);
   background-clip: text;
@@ -407,7 +407,7 @@ body::before {
   max-width: 50%;
 }
 
-.heading-primary--observation::before {
+.heading-primary--observation-pl::before {
   content: 'Obserwacja';
   position: absolute;
   top: 0;
@@ -417,7 +417,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--observation::after {
+.heading-primary--observation-pl::after {
   content: "";
   width: 5vmin;
   height: .2vmin;
@@ -467,7 +467,7 @@ body::before {
           transform: translatex(112%);
 }
 
-.heading-primary--analysis {
+.heading-primary--analysis-pl {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#b7b4ae), color-stop(40%, #b7b4ae), color-stop(40%, #e3e1dd), color-stop(60%, #e3e1dd), color-stop(60%, #b7b4ae), to(#b7b4ae));
   background-image: linear-gradient(to top, #b7b4ae 0%, #b7b4ae 40%, #e3e1dd 40%, #e3e1dd 60%, #b7b4ae 60%, #b7b4ae 100%);
   background-clip: text;
@@ -477,7 +477,7 @@ body::before {
   max-width: 50%;
 }
 
-.heading-primary--analysis::before {
+.heading-primary--analysis-pl::before {
   content: 'Analiza';
   position: absolute;
   top: 0;
@@ -487,7 +487,7 @@ body::before {
   text-shadow: 0.4rem 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.heading-primary--analysis::after {
+.heading-primary--analysis-pl::after {
   content: "";
   width: 13vmin;
   height: .2vmin;
@@ -1191,35 +1191,35 @@ body::before {
       grid-template-rows: repeat(2, 1fr);
 }
 
-.action--raid,
+.action--raid-pl,
 .action--raid-eng {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: raid;
 }
 
-.action--provocation,
+.action--provocation-pl,
 .action--provocation-eng {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: provocation;
 }
 
-.action--recon,
+.action--recon-pl,
 .action--recon-eng {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: recon;
 }
 
-.action--wiretapping,
+.action--wiretapping-pl,
 .action--wiretapping-eng {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: wiretapping;
 }
 
-.action--training,
+.action--training-pl,
 .action--training-eng {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -1921,25 +1921,25 @@ body::before {
   margin: 3vmin 0;
 }
 
-.action--raid, .action--provocation, .action--recon, .action--wiretapping, .action--training, .action--raid-eng, .action--provocation-eng, .action--recon-eng, .action--wiretapping-eng, .action--training-eng {
+.action--raid, .action--provocation, .action--recon, .action--wiretapping, .action--training, .action--raid-pl, .action--provocation-pl, .action--recon-pl, .action--wiretapping-pl, .action--training-pl, .action--raid-eng, .action--provocation-eng, .action--recon-eng, .action--wiretapping-eng, .action--training-eng {
   position: relative;
 }
 
-.action--raid-header, .action--provocation-header, .action--recon-header, .action--wiretapping-header, .action--training-header, .action--raid-eng-header, .action--provocation-eng-header, .action--recon-eng-header, .action--wiretapping-eng-header, .action--training-eng-header {
+.action--raid-header, .action--provocation-header, .action--recon-header, .action--wiretapping-header, .action--training-header, .action--raid-pl-header, .action--provocation-pl-header, .action--recon-pl-header, .action--wiretapping-pl-header, .action--training-pl-header, .action--raid-eng-header, .action--provocation-eng-header, .action--recon-eng-header, .action--wiretapping-eng-header, .action--training-eng-header {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.action--raid {
+.action--raid-pl {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 36% 1vmin, 1vmin 8vmin, 36% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
 }
 
-.action--raid::before {
+.action--raid-pl::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1951,7 +1951,7 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--raid::after {
+.action--raid-pl::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1994,14 +1994,14 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--provocation {
+.action--provocation-pl {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 25% 1vmin, 1vmin 8vmin, 25% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
 }
 
-.action--provocation::before {
+.action--provocation-pl::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2013,7 +2013,7 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--provocation::after {
+.action--provocation-pl::after {
   content: '';
   position: absolute;
   top: 0;
@@ -2056,14 +2056,14 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--recon {
+.action--recon-pl {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 25% 1vmin, 1vmin 8vmin, 25% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
 }
 
-.action--recon::before {
+.action--recon-pl::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2075,7 +2075,7 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--recon::after {
+.action--recon-pl::after {
   content: '';
   position: absolute;
   top: 0;
@@ -2118,14 +2118,14 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--wiretapping {
+.action--wiretapping-pl {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 30% 1vmin, 1vmin 8vmin, 30% 1vmin, 1vmin 0vmin, 2vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
 }
 
-.action--wiretapping::before {
+.action--wiretapping-pl::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2137,7 +2137,7 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) -0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--wiretapping::after {
+.action--wiretapping-pl::after {
   content: '';
   position: absolute;
   top: 0;
@@ -2180,14 +2180,14 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
-.action--training {
+.action--training-pl {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
   background-repeat: no-repeat;
   background-size: 0.2vmin 8vmin, 33% 1vmin, 1vmin 8vmin, 33% 1vmin, 1vmin 14.55vmin, 2vmin 0.2vmin, 0.2vmin 14.55vmin, 2vmin 0.2vmin;
 }
 
-.action--training::before {
+.action--training-pl::before {
   content: '';
   position: absolute;
   top: 0;
@@ -2200,7 +2200,7 @@ body::before {
   z-index: -1;
 }
 
-.action--training::after {
+.action--training-pl::after {
   content: '';
   position: absolute;
   top: 0;
