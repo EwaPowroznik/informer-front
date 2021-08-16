@@ -55,6 +55,28 @@
                     2vmin .2vmin; //dolny lewy w prawo
                     // box-shadow: rgba($color-black, 0.3) .2vmin -.1vmin .3vmin;                  
 }
+@mixin action-border-irregular($default-color,$width, $height){
+    background:
+    linear-gradient(to right, ($default-color) $border-height , transparent $border-height ) 0 0, // TOP LEFT
+    linear-gradient(to bottom, ($default-color) $border-height, transparent $border-height) 0 0, // TOP LEFT
+    linear-gradient(to left, ($default-color) $border-height, transparent $border-height) 100% 0, // TOP RIGHT
+    linear-gradient(to bottom, ($default-color) $border-height, transparent $border-height) 100% 0, // TOP RIGHT
+    linear-gradient(to left, ($default-color)$border-height , transparent $border-height) 100% 100%, // BOTTOM RIGHT
+    linear-gradient(to top, ($default-color) $border-height, transparent $border-height) 100% 100%, // BOTTOM RIGHT
+    linear-gradient(to right, ($default-color) $border-height, transparent $border-height ) 0 100%, // BOTTOM LEFT
+    linear-gradient(to top, ($default-color) $border-height, transparent $border-height) 0 100%; // BOTTOM LEFT
+    background-repeat: no-repeat;
+    background-size:.2vmin 8vmin, //górny lewy w dół
+                    ($width) 1vmin, //górny lewy w prawo
+                    1vmin 8vmin, //górny prawy w dół
+                    ($width) 1vmin, //górny prawy w lewo
+                    1vmin ($height), //dolny prawy w górę
+                    41vmin .2vmin, //dolny prawy w lewo
+                    0.2vmin ($height), //dolny lewy  w górę
+                    2vmin .2vmin; //dolny lewy w prawo
+                    // box-shadow: rgba($color-black, 0.3) .2vmin -.1vmin .3vmin;                  
+}
+
 @mixin shadow-before($width){
     content:'';
     position:absolute;
@@ -72,6 +94,15 @@
     height:100%;
     z-index:-1;
     box-shadow:rgba($color-black,.3vmin) .3vmin -.3vmin .8vmin;
+}
+@mixin shadow-after-irregular($width){
+    content:'';
+    position:absolute;
+    top:0;right:0;
+    width:$width;
+    height:100%;
+    z-index:-1;
+    box-shadow:rgba($color-black,.3vmin) .3vmin .3vmin .8vmin;
 }
 
 @mixin decision-box-properities{

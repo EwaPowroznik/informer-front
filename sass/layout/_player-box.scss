@@ -315,6 +315,7 @@
         overflow:hidden;
         position:relative;
         backface-visibility: hidden;
+       resize: none;
         
         &::placeholder{
             color:$color-text-white;

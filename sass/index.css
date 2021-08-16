@@ -349,7 +349,7 @@ body::before {
 .heading-primary--rest-pl::after {
   content: "";
   width: 5vmin;
-  height: .15vmin;
+  height: .2vmin;
   border-radius: 5px;
   position: absolute;
   background: #d4876d;
@@ -385,7 +385,7 @@ body::before {
 .heading-primary--rest-eng::after {
   content: "";
   width: 21vmin;
-  height: .15vmin;
+  height: .2vmin;
   border-radius: 5px;
   position: absolute;
   background: #d4876d;
@@ -607,7 +607,7 @@ body::before {
 }
 
 .decision__text {
-  font-size: 2vmin;
+  font-size: 1.8vmin;
   text-transform: uppercase;
   font-weight: 400;
   padding: 1vmin;
@@ -661,6 +661,7 @@ body::before {
   letter-spacing: .1vmin;
   display: inline-block;
   margin-bottom: 1vmin;
+  margin-top: 1vmin;
 }
 
 .information__text--float {
@@ -780,7 +781,7 @@ body::before {
 
 .btn--accept::before {
   content: "";
-  width: 15.4vmin;
+  width: 15.3vmin;
   height: 3.1vmin;
   z-index: -2;
   position: Absolute;
@@ -1058,7 +1059,7 @@ body::before {
 .btn-information, .btn-information:link, .btn-information:visited {
   position: absolute;
   top: 40%;
-  left: 85%;
+  left: 83%;
   cursor: pointer;
   height: 10vmin;
   width: 10vmin;
@@ -1863,6 +1864,7 @@ body::before {
   position: relative;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  resize: none;
 }
 
 .form__name .name-input::-webkit-input-placeholder {
@@ -1963,6 +1965,25 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--raid-pl-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 36% 1vmin, 1vmin 8vmin, 36% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--raid-pl-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+}
+
 .action--raid-eng {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -1992,6 +2013,25 @@ body::before {
   z-index: -1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--raid-eng-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #d4876d), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #d4876d 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #d4876d 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 40% 1vmin, 1vmin 8vmin, 40% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--raid-eng-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
 }
 
 .action--provocation-pl {
@@ -2025,6 +2065,25 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--provocation-pl-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 25% 1vmin, 1vmin 8vmin, 25% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--provocation-pl-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+}
+
 .action--provocation-eng {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -2054,6 +2113,25 @@ body::before {
   z-index: -1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--provocation-eng-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #eed86c), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #eed86c 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #eed86c 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 26% 1vmin, 1vmin 8vmin, 26% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--provocation-eng-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
 }
 
 .action--recon-pl {
@@ -2087,6 +2165,25 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--recon-pl-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 25% 1vmin, 1vmin 8vmin, 25% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--recon-pl-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+}
+
 .action--recon-eng {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -2116,6 +2213,25 @@ body::before {
   z-index: -1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--recon-eng-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #7f5ca7), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #7f5ca7 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 38% 1vmin, 1vmin 8vmin, 38% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--recon-eng-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
 }
 
 .action--wiretapping-pl {
@@ -2149,6 +2265,25 @@ body::before {
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
 }
 
+.action--wiretapping-pl-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 30% 1vmin, 1vmin 8vmin, 30% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--wiretapping-pl-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+}
+
 .action--wiretapping-eng {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -2178,6 +2313,25 @@ body::before {
   z-index: -1;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
+}
+
+.action--wiretapping-eng-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #01c4db), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #01c4db 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #01c4db 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 26% 1vmin, 1vmin 8vmin, 26% 1vmin, 1vmin 0vmin, 41vmin 0.2vmin, 0.2vmin 0vmin, 2vmin 0.2vmin;
+}
+
+.action--wiretapping-eng-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
 }
 
 .action--training-pl {
@@ -2213,6 +2367,25 @@ body::before {
   z-index: -1;
 }
 
+.action--training-pl-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 33% 1vmin, 1vmin 8vmin, 33% 1vmin, 1vmin 14.55vmin, 41vmin 0.2vmin, 0.2vmin 14.55vmin, 2vmin 0.2vmin;
+}
+
+.action--training-pl-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+}
+
 .action--training-eng {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
   background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
@@ -2244,6 +2417,25 @@ body::before {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
           box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin -0.3vmin 0.8vmin;
   z-index: -1;
+}
+
+.action--training-eng-tutorial {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, left top, left bottom, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 0, -webkit-gradient(linear, right top, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 100% 100%, -webkit-gradient(linear, left top, right top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%, -webkit-gradient(linear, left bottom, left top, color-stop(0.2vmin, #6c8190), color-stop(0.2vmin, transparent)) 0 100%;
+  background: linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 0 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to bottom, #6c8190 0.2vmin, transparent 0.2vmin) 100% 0, linear-gradient(to left, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 100% 100%, linear-gradient(to right, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%, linear-gradient(to top, #6c8190 0.2vmin, transparent 0.2vmin) 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0.2vmin 8vmin, 33% 1vmin, 1vmin 8vmin, 33% 1vmin, 1vmin 14.55vmin, 41vmin 0.2vmin, 0.2vmin 14.55vmin, 2vmin 0.2vmin;
+}
+
+.action--training-eng-tutorial::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: -1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
+          box-shadow: rgba(0, 0, 0, 0.3) 0.3vmin 0.3vmin 0.8vmin;
 }
 
 .action__button-box {
@@ -2278,6 +2470,15 @@ body::before {
   left: 50%;
   -webkit-transform: translate(-50%, -52%);
           transform: translate(-50%, -52%);
+}
+
+.action__button-box--training-tutorial {
+  left: 5%;
+  top: 60%;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .action--other {
@@ -2353,7 +2554,7 @@ body::before {
 .popup {
   width: 100vw;
   height: 105vmin;
-  background: url(../../img/fake-background.png) no-repeat center center/cover;
+  background: url(../img/fake-background.png) no-repeat center center/cover;
   position: fixed;
   top: 48%;
   left: 50%;
@@ -2401,6 +2602,24 @@ body::before {
 .popup__content--smaller {
   width: 44vw;
   height: 58vmin;
+  position: Absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2.5vmin;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/bg.png);
+  background-size: cover;
+  border: 0.4vmin solid #09d5ff;
+  border-radius: 1.2vmin;
+  -webkit-box-shadow: 1vmin 1.4vmin 2vmin 0.7vmin rgba(0, 0, 0, 0.7), inset 0vmin 0vmin 1.2vmin 0.3vmin rgba(187, 239, 249, 0.5);
+          box-shadow: 1vmin 1.4vmin 2vmin 0.7vmin rgba(0, 0, 0, 0.7), inset 0vmin 0vmin 1.2vmin 0.3vmin rgba(187, 239, 249, 0.5);
+  position: relative;
+}
+
+.popup__content--announcement {
+  width: 40vw;
+  height: 28vmin;
   position: Absolute;
   top: 50%;
   left: 50%;
