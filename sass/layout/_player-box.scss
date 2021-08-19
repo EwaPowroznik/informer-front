@@ -240,68 +240,167 @@
                 
                }
             }
-        }
+            }
        
 
     }
-    &__dices{
+        &__dices{
+            position:absolute;
+            width:90%;
+            height:70%;
+            top:27%;
+            left:5%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+
+            .dice-effect{
+                display:flex;
+                flex-direction: column;
+                justify-content:flex-start;
+                align-items: center;
+            width:25%;
+            height:45%;
+            margin: 0 4%;
+            position:relative;
+            
+
+                .single-dice{
+                    @include flex-column-center;
+                    width:70%;
+                    height:60%;
+                    position:relative;
+                    margin-bottom:.4vmin;
+                    filter:contrast(130%);
+                    
+
+                        &__frame{
+                            width:100%;
+                        height:100%;
+                        position:Absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%,-50%);
+                        z-index:1;
+                        filter:brightness(110%) contrast(110%);
+                        
+                            }
+                        &__img{
+                            width:100%;
+                            height:100%;
+                            position:Absolute;
+                            top:50%;
+                            left:50%;
+                            transform:translate(-50%,-50%);
+                            z-index:0;
+                        }
+
+                }
+
+          
+            }         
+
+        } 
+    &__results{
         position:absolute;
         width:90%;
         height:70%;
-        top:27%;
+        top:28%;
         left:5%;
         display:flex;
-        flex-direction: column;
+        flex-wrap:wrap;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        justify-content: center;
 
-        .dice-effect{
-            display:flex;
-            flex-direction: column;
-            justify-content:flex-start;
-            align-items: center;
-           width:25%;
-           height:45%;
-           margin: 0 4%;
-           position:relative;
-
-           .single-dice{
-            @include flex-column-center;
-            width:70%;
+        .results-box{
+            width:50%;
             height:60%;
             position:relative;
-            margin-bottom:.4vmin;
-            filter:contrast(130%);
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
 
-                 &__frame{
-                    width:100%;
-                   height:100%;
-                   position:Absolute;
-                   top:50%;
-                   left:50%;
-                   transform:translate(-50%,-50%);
-                   z-index:1;
-                   filter:brightness(110%) contrast(110%);
-                   
-                    }
+            &--final{
+                position:relative;
+                width:50%;
+                height:35%;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .points-box{
+            position:relative;
+            width:60%;
+            height:50%;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+
+            .points{
+                position:relative;
+                width:6vmin;
+                height:6vmin;
+
+                &--final{
+                    position:relative;
+                    width:7vmin;
+                height:7vmin;
+
+                }
+             
                 &__img{
-                    width:100%;
+                    width:90%;
                     height:100%;
-                    position:Absolute;
+                    position:absolute;
                     top:50%;
                     left:50%;
-                    transform:translate(-50%,-50%);
-                    z-index:0;
+                    transform: translate(-50%,-50%);
+                    filter:invert(80%)contrast(150%)brightness(150%);
+
+                  
                 }
+                &__text{
+                    font-size: 3vmin;
+                    color:$color-button-text-black;
+                    z-index:2;
+                    position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
 
-           }
-
-          
-         }         
-
+            }
+                
+            }
+        }
+      
+        .arrow{
+            height: 1.6vmin;
+             width: 1.6vmin;
+            border: .4vmin solid rgba($color-text-blue-light, .9);
+            border-width: .4vmin .4vmin 0 0;
+                &--left{
+                    transform: rotate(224deg);
+                }
+                &--right{
+                    transform: rotate(45deg);
+                }
+                &--bottom{
+                    transform: rotate(135deg);
+                }
+        }   
+            
     } 
-}
+    
+
 
 
   

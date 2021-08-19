@@ -355,6 +355,17 @@
             }  
             }
         }
+    &--results {
+        font-size: 2vmin;
+        @include  text-background ( $color-text-blue-dark,$color-text-blue-light);
+        background-clip:text;
+        -webkit-background-clip: text;
+        color:transparent;
+        text-shadow: .1rem .1rem .8rem rgba($color-text-blue-light, .5);
+        display:inline-block;
+        text-align: center;
+        margin:.5vmin 2vmin;
+    }   
 }
         
        
@@ -441,6 +452,7 @@
     text-shadow: -.5px 0 $color-black, 0 0.5px $color-black, .5px 0 $color-black, 0 -.5px $color-black;
     font-size:3vmin;
     }
+  
 }
 .dice-effect__label{
     display:inline-block;
