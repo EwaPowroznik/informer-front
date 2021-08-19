@@ -1929,7 +1929,7 @@ body::before {
 
 .player-box__results .results-box .points-box {
   position: relative;
-  width: 60%;
+  width: 70%;
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
