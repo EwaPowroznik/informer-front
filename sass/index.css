@@ -766,6 +766,10 @@ body::before {
   margin-right: -4vmin;
 }
 
+.u-hidden {
+  visibility: hidden;
+}
+
 .btn, .btn:link, .btn:visited {
   font-family: "Russo One Regular";
   color: #040920;
