@@ -22,6 +22,66 @@
   }
 }
 
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: Scale(1);
+            transform: Scale(1);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: Scale(1);
+            transform: Scale(1);
+  }
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+            box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 1vmin 0.8vmin rgba(170, 0, 23, 0.1);
+            box-shadow: 0 0 1vmin 0.8vmin rgba(170, 0, 23, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+            box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+            box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+  }
+  50% {
+    -webkit-box-shadow: 0 0 1vmin 0.8vmin rgba(170, 0, 23, 0.1);
+            box-shadow: 0 0 1vmin 0.8vmin rgba(170, 0, 23, 0.1);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+            box-shadow: 0 0 2.2vmin 0.8vmin rgba(170, 0, 23, 0.7);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -612,6 +672,13 @@ body::before {
   color: #09d5ff;
 }
 
+.time-end {
+  font-size: 2vmin;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #aa0017;
+}
+
 .timer__count {
   font-family: "Free Pixel", sans-serif;
   font-weight: 300;
@@ -1123,6 +1190,17 @@ body::before {
   background: url("../img/timer-bg.png") no-repeat center/cover;
   -webkit-box-shadow: 0.3vmin 0.3vmin 0.6vmin rgba(4, 9, 32, 0.7);
           box-shadow: 0.3vmin 0.3vmin 0.6vmin rgba(4, 9, 32, 0.7);
+  -webkit-transition: all ease-out;
+  transition: all ease-out;
+}
+
+.timer__box-end {
+  font-size: 2vmin;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #aa0017;
+  -webkit-animation: glow 2s infinite;
+          animation: glow 2s infinite;
 }
 
 .footer {

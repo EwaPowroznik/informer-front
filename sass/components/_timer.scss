@@ -10,4 +10,14 @@
     justify-content: center;
     background: url("../img/timer-bg.png")no-repeat center/cover;
     box-shadow: .3vmin .3vmin .6vmin rgba($color-button-text-black,.7); 
+    transition:all ease-out;
+   
+
+    &-end{
+        font-size:2vmin;
+        text-transform: uppercase;
+        font-weight: 400;
+        color:$color-timer-red;
+        animation:glow 2s infinite;
+    }
 }

@@ -306,7 +306,8 @@
             }
         }
         &--analysis{
-            &-pl{@include text-background ($color-analysis,$color-analysis-lighter);
+            &-pl{
+                @include text-background ($color-analysis,$color-analysis-lighter);
                 background-clip:text;
                 -webkit-background-clip: text;
                 color:transparent;
@@ -422,6 +423,12 @@
     text-transform: uppercase;
     font-weight: 400;
     color:$color-blue-glow;
+}
+.time-end{
+    font-size:2vmin;
+    text-transform: uppercase;
+    font-weight: 400;
+    color:$color-timer-red;
 }
 .timer__count{
     font-family:"Free Pixel", sans-serif;
